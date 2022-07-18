@@ -1,0 +1,177 @@
+body a, body button, body [role="button"], body [type="button"], body [type="submit"] {
+    cursor: pointer;
+}
+
+.jEGArX {
+    background-color: rgb(245, 247, 249);
+}
+
+.gPKhUM {
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: baseline;
+    align-items: baseline;
+    padding: 40px 0px;
+}
+
+@media (min-width: 800px) {
+    .gPKhUM {
+        align-items: normal;
+        padding: 48px 0px;
+    }
+}
+
+.czbbnx {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.3px;
+}
+
+@media (min-width: 768px) {
+    .czbbnx {
+        font-size: 16px;
+    }
+}
+
+.gbhORQ {
+    margin-left: 6px;
+}
+
+.daJQoZ {
+    color: rgb(24, 26, 29);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: color 0.15s ease-in-out 0s;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (min-width: 768px) {
+    .daJQoZ {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .daJQoZ {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .daJQoZ {
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .daJQoZ {
+        line-height: 20px;
+    }
+}
+
+.daJQoZ span {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (min-width: 768px) {
+    .daJQoZ span {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .daJQoZ span {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .daJQoZ span {
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .daJQoZ span {
+        line-height: 20px;
+    }
+}
+
+.jTXkWB {
+    padding: 3px 0px 0px 20px;
+}
+
+.jTXkWB::after {
+    transform: translateY(-5px);
+}
+
+.bBabwX {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    display: block;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.4px;
+}
+
+@media (min-width: 1024px) {
+    .bBabwX {
+        font-size: 20px;
+    }
+}
+
+.daJQoZ::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: currentcolor;
+    margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+    .daJQoZ::after {
+        margin-top: 2px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .daJQoZ::after {
+        margin-top: 2px;
+    }
+}
+
+.dcBrbi {
+    border-width: 1px 0px 0px;
+    border-right-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-image: initial;
+    border-top-style: solid;
+    border-top-color: rgb(228, 230, 231);
+    margin: 0px 32px;
+}
+
+@media (min-width: 580px) {
+    .dcBrbi {
+        margin: 0px auto;
+        padding: 0px;
+        width: 460px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .dcBrbi {
+        width: 900px;
+    }
+}

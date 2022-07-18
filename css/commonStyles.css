@@ -1,0 +1,62 @@
+.font-1314-dYhvXN {
+    color: rgb(24, 26, 29);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: color 0.15s ease-in-out 0s;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+@media (min-width: 768px) {
+    .font-1314-dYhvXN {
+        font-size: 14px;
+        line-height: 20px;
+    }    
+}
+
+@media (min-width: 1024px) {
+    .font-1314-dYhvXN {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.font-1314-dYhvXN span {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+@media (min-width: 768px) {
+    .font-1314-dYhvXN span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .font-1314-dYhvXN span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.font-1314-dYhvXN::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: currentcolor;
+    margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+    .font-1314-dYhvXN::after {
+        margin-top: 2px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .font-1314-dYhvXN::after {
+        margin-top: 2px;
+    }
+}

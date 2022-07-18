@@ -1,0 +1,389 @@
+/*kdnToX(kdnToX) nav tag. navbar-kdnToX*/
+.navbar-kdnToX {
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    height: 48px;
+    background: linear-gradient(rgb(25, 28, 32) 23%, rgba(25, 28, 32, 0));
+    padding: 0px calc(1rem - 12px) 0px 1rem;
+    top: 0px;
+    width: 100%;
+    z-index: 4;
+    position: sticky;
+}
+
+.navbar-kdnToX svg {
+    display: block;
+    fill: currentcolor;
+}
+
+.navbar-kdnToX div.focus-lock {
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .navbar-kdnToX {
+        height: 64px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-kdnToX {
+        height: 64px;
+        padding: 0px calc(1.5rem - 12px) 0px 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-kdnToX {
+        height: 72px;
+        padding: 0px 2rem;
+    }
+}
+
+/*fJvVHI(fJvVHI) nav tag. sticky-nav-fJvVHI*/
+.sticky-nav-fJvVHI {
+    background-color: rgb(24, 26, 29);
+    position: sticky;
+}
+
+/*cbCdjk(cbCdjk) div tag. logo-section-cbCdjk */
+.logo-section-cbCdjk {
+    display: flex;
+    flex: 1 1 0%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+/*flWoNK(flWoNK) a tag. logo-link-flWoNK */
+.logo-link-flWoNK {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+}
+
+/*gLYEcu(gLYEcu) svg tag. logo-svg-gLYEcu */
+.logo-svg-gLYEcu {
+    height: 28px;
+}
+
+/*euZINs(euZINs) svg tag. logo-svg-largeScreen-euZINs */
+.logo-svg-largeScreen-euZINs {
+    width: 120px;
+}
+
+/*kqBshQ9kqBshQ) div tag. navbar-textbutton-flex-kqBshQ */
+.navbar-textbutton-flex-kqBshQ {
+    flex: 1 1 0%;
+    position: relative;
+}
+
+/*cmNKxl(cmNKxl) navbar-productsMenuList-cmNKxl */
+.navbar-productsMenuList-cmNKxl {
+    margin: 0px auto;
+    height: 56px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+/*gDRBgt(gDRBgt) button tag. navbar-productsMenu-gDRBgt */
+.navbar-productsMenu-gDRBgt {
+    font-weight: 700;
+    font-family: brandon-grotesque, sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 1.375em;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    width: auto;
+    height: 56px;
+    padding: 0px 16px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+.navbar-productsMenu-gDRBgt::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid rgb(255, 255, 255);
+    bottom: -8px;
+    left: calc((100% - 16px) / 2);
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+.navbar-productsMenu-gDRBgt span::after {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-productsMenu-gDRBgt span::after {
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    border: 1px solid currentcolor;
+    border-radius: 1px;
+    background: currentcolor;
+    content: "";
+    height: 2px;
+    width: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: calc(50% + 12px);
+}
+
+@media not all, (pointer: fine), not all, not all {
+    .navbar-productsMenu-gDRBgt:hover {
+        color: rgb(168, 172, 177);
+    }
+}
+
+.navbar-productsMenu-gDRBgt div {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.navbar-productsMenu-gDRBgt span {
+    position: relative;
+}
+
+.navbar-productsMenu-gDRBgt div svg {
+    fill: rgb(168, 172, 177);
+    height: 5px;
+    width: 8px;
+    margin: -2px 0px 0px 3px;
+    pointer-events: none;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+@media (min-width: 1280px) {
+    .navbar-productsMenu-gDRBgt {
+        font-weight: 700;
+        font-family: brandon-grotesque, sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 1.375em;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
+
+/*dvFJrd(dvFJrd) div tag. navbar-productLink-dvFJrd */
+.navbar-productLink-dvFJrd {
+    font-weight: 700;
+    font-family: brandon-grotesque, sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 1.375em;
+    text-transform: uppercase;
+    font-size: 12px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    width: auto;
+    padding: 0px 16px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+.navbar-productLink-dvFJrd::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid rgb(255, 255, 255);
+    bottom: -8px;
+    left: calc((100% - 16px) / 2);
+    transform: rotate(90deg);
+    opacity: 0;
+}
+
+@media not all, (pointer: fine), not all, not all {
+    .navbar-productLink-dvFJrd:hover {
+        color: rgb(168, 172, 177);
+    }
+}
+
+@media (min-width: 1280px) {
+    .navbar-productLink-dvFJrd {
+        font-weight: 700;
+        font-family: brandon-grotesque, sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 1.375em;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
+
+/*fLGqrl(fLGqrl) div tag. navbar-svgbutton-flex-fLGqrl */
+.navbar-svgbutton-flex-fLGqrl {
+    flex: 1 1 0%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+/*kgbpws(kgbpws) ul tag. navbar-svgbutton-ul-kgbpws */
+.navbar-svgbutton-ul-kgbpws {
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    display: flex;
+    height: 100%;
+}
+
+.navbar-svgbutton-ul-kgbpws > li {
+    height: 100%;
+}
+
+@media (min-width: 1024px) {
+    .navbar-svgbutton-ul-kgbpws > li:not(:first-child) {
+        margin-left: 1.5rem;
+    }
+}
+
+.navbar-svgbutton-ul-kgbpws button {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+    width: calc(2rem + 24px);
+}
+
+.navbar-svgbutton-ul-kgbpws button svg {
+    height: 1.75rem;
+    pointer-events: none;
+    width: 1.75rem;
+    fill: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-svgbutton-ul-kgbpws button svg {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-svgbutton-ul-kgbpws button {
+        width: 2rem;
+    }
+}
+
+/* navbar-svgbutton-iemeqy */
+.navbar-svgbutton-iemeqy {
+    position: relative;
+}
+
+/*DCMqf(DCMqf) div tag. fullwidth-container-DCMqf */
+.fullwidth-container-DCMqf {
+    display: block;
+    width: 100%;
+}
+
+/*kbbWQF(kbbWQF) svg tag. overflow-visibile-kbbWQF */
+.overflow-visibile-kbbWQF {
+    overflow: visible;
+}
+
+/*gPAwpd(gPAwpd) div tag. navbar-cart-container-gPAwpd */
+.navbar-cart-container-gPAwpd {
+    position: relative;
+    width: auto;
+}
+
+.navbar-cart-container-gPAwpd svg {
+    fill: none;
+    display: block;
+}
+
+/*dVNoQG(dVNoQG) div tag. viewport-background-dVNoQG */
+.viewport-background-dVNoQG {
+    content: "";
+    background: linear-gradient(rgb(25, 28, 32), rgba(25, 28, 32, 0) 69%);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: 0px;
+    transition: opacity 200ms ease 0s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/*eTZRTO(eTZRTO) main tag. main-flex-eTZRTO it is below the sticky navbar*/
+.main-flex-eTZRTO {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.navbar-kdnToX + * {
+    margin-top: -48px;
+}
+
+@media (min-width: 768px) {
+    .navbar-kdnToX + * {
+        margin-top: -64px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-kdnToX + * {
+        margin-top: -72px;
+    }
+}
+
+
+
+
+/*
+
+If use rem, the style will go wrong if the browser's default font is not default since the unit is in rem.
+
+.navbar-kdnToX + * {
+    margin-top: -3rem;
+}
+
+@media (min-width: 768px) {
+    .navbar-kdnToX + * {
+        margin-top: -4rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar-kdnToX + * {
+        margin-top: -4.5rem;
+    }
+}
+*/

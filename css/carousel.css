@@ -1,0 +1,668 @@
+/*fCjOYM(fCjOYM) span tag. styled-display-fCjOYM*/
+.styled-display-fCjOYM {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    font-size: 22px;
+    line-height: 1.45;
+    letter-spacing: 2.2px;
+}
+
+@media (min-width: 768px) {
+    .styled-display-fCjOYM {
+        font-size: 28px;
+        line-height: 1.25;
+        letter-spacing: 2.8px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .styled-display-fCjOYM {
+        font-size: 32px;
+        letter-spacing: 3.2px;
+    }
+}
+
+
+/*gyqVlX(gyqVlX) a tag. full-width-link. */
+.full-width-link-gyqVlX {
+    width: 100%;
+}
+
+.full-width-link-gyqVlX::after {
+    display: none;
+}
+
+
+
+/*
+.navbar-kdnToX + * {
+    margin-top: -3rem;
+}
+
+
+
+.lazyload-div-kKtcmG {
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+*/
+
+
+
+
+.carousel-section-mFWXw {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+}
+
+/*gRjVHm(bOIVlN) div tag. carousel-inner-gRjVHm */
+
+.carousel-inner-gRjVHm {
+    display: grid;
+    transition: opacity 0.15s ease-in 150ms;
+    position: relative;
+}
+
+.carousel-inner-gRjVHm > .active {
+    visibility: visible;
+    z-index: 1;
+}
+
+.carousel-inner-gRjVHm > * {
+    grid-area: 1 / 1 / 1 / 1;
+    visibility: hidden;
+}
+
+.carousel-inner-gRjVHm > .active::after {
+    opacity: 0;
+}
+
+.carousel-inner-gRjVHm > ::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+    background-color: black;
+    transition: all 0.2s ease-in 0s;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/*hTVjSJ(hTVjSJ) div tag. banner-hTVjSJ*/
+.banner-hTVjSJ {
+    font-weight: 700;
+    font-family: brandon-grotesque, sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 1.375em;
+    text-transform: uppercase;
+    font-size: 12px;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(245, 247, 249);
+    color: rgb(24, 26, 29);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 15px 30px;
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 580px) {
+    .banner-hTVjSJ {
+        font-weight: 700;
+        font-family: brandon-grotesque, sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 1.375em;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 20px 40px;
+    }
+}
+
+@media (min-width: 800px) {
+    .banner-hTVjSJ {
+        min-height: 66px;
+    }
+}
+
+/*lnVZPD(lnVZPD) span tag. homepage-banner-text-lnVZPD */
+
+/*gCYLON(gCYLON) span tag. homepage-banner-cta-gCYLON*/
+.homepage-banner-cta-gCYLON {
+    position: relative;
+    margin-left: 0px;
+    white-space: nowrap;
+}
+
+.homepage-banner-cta-gCYLON::after {
+    border-bottom: 1px solid rgb(24, 26, 29);
+    content: "";
+    left: 0px;
+    position: absolute;
+    top: calc(50% + 9px);
+    width: 100%;
+}
+
+/*gUIdhS(EjCrS) div tag. cmsHeroContainer-gUIdhS */
+
+/*kquKqa(dYmKNK) carousel-item of bootstrap 5, cannot(or we can. this is probably wrong) change classname */
+
+/*kquKqa(kRowOl) div tag. carousel-ImageAndContent-flex-kRowOl */
+.carousel-ImageAndContent-flex-kRowOl {
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 480px;
+    position: relative;
+}
+
+@media (min-width: 580px) {
+    .carousel-ImageAndContent-flex-kRowOl {
+        height: 550px;
+    }
+}
+
+@media (min-width: 800px) {
+    .carousel-ImageAndContent-flex-kRowOl {
+        height: 760px;
+    }
+}
+
+/*
+.carousel-item {
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 480px;
+    position: relative;
+}
+
+@media (min-width: 580px) {
+    .carousel-item {
+        height: 550px;
+    }
+}
+
+@media (min-width: 800px) {
+    .carousel-item {
+        height: 760px;
+    }
+}
+*/
+
+/*KeLC(drcWis) div tag of carousel image wrapper */
+.carousel-image-wrapper-drcWis {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/*oyalu(oyalu) div tag of background-image-oyalu*/
+.background-image-oyalu {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.background-image-oyalu > div, .background-image-oyalu video, .background-image-oyalu img, .background-image-oyalu picture {
+    height: 100%;
+    width: 100%;
+    object-fit: inherit;
+    vertical-align: middle;
+}
+
+/*juHCdc(juHCdc) video tag of slide-video-juHCdc */
+.slide-video-juHCdc {
+    object-fit: cover;
+    object-position: center top;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-captions-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/*gHUoen() slide-support-text-gHUoen: h2 tag of homepage-hero-slide-support. small and descriptive text */
+.slide-support-text-gHUoen {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/*gikNOR(hGXIOq) div tag carousel caption contents flex wrapper */
+
+.carousel-flex-content-hGXIOq {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    mix-blend-mode: normal;
+    height: 100%;
+    transition: background-color 0.4s ease-in-out 0s;
+}
+
+@media (min-width: 375px) {
+    .carousel-flex-content-hGXIOq {
+        padding: 2rem 1.5rem;
+    }
+}
+
+@media (min-width: 580px) {
+    .carousel-flex-content-hGXIOq {
+        padding: 2rem 3.125rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-flex-content-hGXIOq {
+        text-align: left;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 800px) {
+    .carousel-flex-content-hGXIOq {
+        padding: 2rem 8.75rem;
+    }
+}
+
+.carousel-flex-content-hGXIOq.active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 800px) {
+    .carousel-flex-content-hGXIOq.active {
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, transparent 85%);
+    }
+}
+
+
+.carousel-flex-content-hGXIOq h1 {
+    font-family: brandon-grotesque, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.375em;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.carousel-flex-content-hGXIOq h1, .carousel-flex-content-hGXIOq h2, .carousel-flex-content-hGXIOq h6, .carousel-flex-content-hGXIOq p {
+    max-width: 480px;
+}
+
+@media (min-width: 580px) {
+    .carousel-flex-content-hGXIOq h1 {
+        line-height: 1.25em;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-flex-content-hGXIOq h1, .carousel-flex-content-hGXIOq h2 {
+        max-width: 680px;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel-flex-content-hGXIOq h6, .carousel-flex-content-hGXIOq p {
+        max-width: 520px;
+    }
+}
+
+/*xCLtQ*/
+.eyebrow-styled-xCLtQ {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 1.5px;
+    font-family: brandon-grotesque, sans-serif !important;
+}
+
+@media (min-width: 768px) {
+    .eyebrow-styled-xCLtQ {
+        font-size: 16px;
+        letter-spacing: 1.8px;
+    }
+}
+
+/*fsZndk*/
+.headline-styled-fsZndk {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    display: block;
+    text-shadow: rgb(0 0 0) 2px 2px 6px;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    line-height: 1.42;
+}
+
+@media (min-width: 768px) {
+    .headline-styled-fsZndk {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .headline-styled-fsZndk {
+        font-size: 44px;
+        line-height: 1.36;
+    }
+}
+
+/*jeqlYi (ebnQuw) p tag of homepage hero slide 1 subhead*/
+.subhead-jeqlYi {
+    position: relative;
+    font-weight: 300;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+    font-size: 16px;
+    max-width: 284px;
+}
+
+@media (min-width: 580px) {
+    .subhead-jeqlYi {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 580px) {
+    .subhead-jeqlYi {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 800px) {
+    .subhead-jeqlYi {
+        font-weight: 300;
+        font-family: Roboto, sans-serif;
+        letter-spacing: 0.025em;
+        line-height: 1.5em;
+        font-size: 18px;
+        max-width: 510px;
+    }
+}
+
+@media (min-width: 800px), (min-width: 580px) {
+    .subhead-jeqlYi {
+        font-size: 24px;
+    }
+}
+
+/*bcSaMr (eeCPqk) div tag of carousel buttons flex wrapper*/
+.flex-button-wrapper-bcSaMr {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0px 1rem;
+}
+
+@media (min-width: 640px) {
+    .flex-button-wrapper-bcSaMr {
+        flex-direction: row;
+    }
+}
+
+
+@media (min-width: 800px) {
+    .flex-button-wrapper-bcSaMr {
+        margin: 2.5rem 0px 1rem;
+    }
+}
+
+.flex-button-wrapper-bcSaMr a {
+    margin: 0.5rem 0px;
+}
+
+@media (min-width: 640px) {
+    .flex-button-wrapper-bcSaMr a {
+        margin-right: 1.5rem;
+    }
+}
+
+/*bLuyKs a tag call to action button type 1 */
+.button-cta-1-bLuyKs {
+    line-height: normal;
+    -webkit-font-smoothing: auto;
+    appearance: auto;
+    background: none rgb(223, 28, 47);
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.15s ease-in-out 0s;
+    user-select: none;
+    vertical-align: middle;
+    border-color: rgb(223, 28, 47);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    height: 56px;
+    width: 240px;
+    padding: 0px calc(1.5rem - 2px);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    box-shadow: transparent 0px 0px 0px 0px;
+    font-family: brandon-grotesque, sans-serif !important;
+}
+
+.button-cta-1-bLuyKs:hover:not(:disabled) {
+    background-color: rgb(208, 12, 42);
+    border-color: rgb(208, 12, 42);
+    color: rgb(255, 255, 255);
+}
+
+/*hcatEQ a tag call to action button type 2 */
+.button-cta-2-hcatEQ {
+    line-height: normal;
+    -webkit-font-smoothing: auto;
+    appearance: auto;
+    background: none transparent;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.15s ease-in-out 0s;
+    user-select: none;
+    vertical-align: middle;
+    border-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    height: 56px;
+    width: 240px;
+    padding: 0px calc(1.5rem - 2px);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    box-shadow: transparent 0px 0px 0px 0px;
+    font-family: brandon-grotesque, sans-serif !important;
+}
+
+.button-cta-2-hcatEQ:hover:not(:disabled) {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    color: rgb(24, 26, 29);
+}
+
+/*https://webdesign.tutsplus.com/tutorials/bootstrap-carousel-indicators-into-progress-bars--cms-37536*/
+
+/*
+.carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 60px;
+    height: 6px;
+    border: none;
+    border-radius: 24px;
+}
+  
+.carousel-indicators [data-bs-target] span {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #7952b3;
+    border-radius: inherit;
+}
+*/
+
+/*wceIy(wceIy) div tag carousel/slide buttons wrapper */
+.slide-buttons-wrapper-wceIy {
+    display: flex;
+    flex-flow: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    margin: 0px 3rem;
+}
+
+@media (min-width: 768px) {
+    .slide-buttons-wrapper-wceIy {
+        bottom: 8px;
+    }
+}
+
+/*hdopKD(hdopKD) button tag slide button */
+.slide-button-hdopKD {
+    background: transparent;
+    border: none;
+    padding: 16px 4px;
+    width: 84px;
+    position: relative;
+}
+
+/*bzeOpQ(bzeOpQ) span tag slide button span */
+.slide-button-span-bzeOpQ {
+    height: 2px;
+    width: 100%;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 20px 5px;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: block;
+    position: relative;
+}
+
+.unvisited.active::after {
+    animation: 1000ms linear 0s 1 normal forwards running dEOoOk;
+}
+
+.unvisited::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    /*width: 0px;*/
+    width: var(--width);
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+}
+
+.visited::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 3;
+}
+
+/*ecjkKh(ecjkKh) button tag: slide arrows. slide-arrows-ecjkKh */
+
+.slide-arrows-ecjkKh {
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: none;
+    height: 80px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 40px);
+    width: 100px;
+    z-index: 2;
+}
+
+@media (min-width: 940px) {
+    .slide-arrows-ecjkKh {
+        display: flex;
+    }
+}
+
+.slide-arrows-ecjkKh svg path {
+    transition: all 150ms ease 0s;
+    stroke: rgb(168, 172, 177) !important;
+}
+
+.slide-arrows-ecjkKh:hover svg path {
+    box-shadow: rgb(0 0 0 / 20%) 5px 3px 50px 0px;
+    stroke: rgb(255, 255, 255) !important;
+}
+
+/*cCoBrD(cCoBrD) button tag: slide arrow left button. slide-arrow-left-cCoBrd*/
+.slide-arrow-left-cCoBrd {
+    left: 0px;
+    right: auto;
+}
+
+/*kiWcOt(kiWcOt) button tag: slide arrow right button. slide-arrow-right-kiWcOt*/
+.slide-arrow-right-kiWcOt {
+    left: auto;
+    right: 0px;
+}
