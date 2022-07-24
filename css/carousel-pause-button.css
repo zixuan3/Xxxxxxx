@@ -1,0 +1,32 @@
+/* carousel pause button wrapper div */
+.pause-button-wrapper-jSWYiy {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 3;
+    padding: 16px;
+    transition: opacity 250ms ease 0s;
+}
+
+@media (min-width: 1024px) {
+    .pause-button-wrapper-jSWYiy {
+        padding: 24px;
+    }
+}
+
+
+/* svg of pause/play button of carousel */
+.pause-play-svg-ffHQEO {
+    filter: drop-shadow(rgba(0, 0, 0, 0.15) 1px 1px 2px);
+    width: 50px;
+}
+
+.pause-button-wrapper-jSWYiy svg {
+    width: 26px;
+}
+
+@media (min-width: 1024px) {
+    .pause-button-wrapper-jSWYiy svg {
+        width: 34px;
+    }
+}

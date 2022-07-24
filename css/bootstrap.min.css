@@ -7018,18 +7018,18 @@ fieldset:disabled .btn {
     opacity: 1
 }
 
-.carousel-caption {
+/* .carousel-caption {
     position: absolute;
-    /*
-    right: 15%;
+    
+     right: 15%;
     bottom: 1.25rem;
     left: 15%;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
     color: #fff;
-    text-align: center
-    */
-}
+    text-align: center 
+    
+} */
 
 .carousel-dark .carousel-control-next-icon,
 .carousel-dark .carousel-control-prev-icon {

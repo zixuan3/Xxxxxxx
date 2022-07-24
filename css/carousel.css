@@ -236,7 +236,7 @@
 .carousel-captions-wrapper {
     position: relative;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 
 /*gHUoen() slide-support-text-gHUoen: h2 tag of homepage-hero-slide-support. small and descriptive text */
@@ -597,7 +597,16 @@
 }
 
 .unvisited.active::after {
-    animation: 1000ms linear 0s 1 normal forwards running dEOoOk;
+    animation: 5000ms linear 0s 1 normal forwards running indicator-animation;
+}
+
+@keyframes indicator-animation {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
 }
 
 .unvisited::after {
@@ -605,8 +614,8 @@
     position: absolute;
     top: 0px;
     left: 0px;
-    /*width: 0px;*/
-    width: var(--width);
+    width: 0px;
+    /*width: var(--width);*/
     height: 100%;
     background-color: rgb(255, 255, 255);
     z-index: 3;
