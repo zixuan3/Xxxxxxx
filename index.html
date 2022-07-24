@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/carousel-pause-button.css">
 
 
   <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -591,193 +592,210 @@
     <main id="main" class="main-flex-eTZRTO" data-test-id="full-height-flex">
       <div class="lazyload-div-kKtcmG" data-test-id="lazy-loaded">
         -->
-        <section class="header carousel-section-mFWXw">
+        <section class="header carousel-section-mFWXw"
+          id="CarouselZone">
 
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="true">
-            <div class="carousel-inner carousel-inner-gRjVHm" data-test-id="carousel-container">
-              <div class="carousel-item active cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
-    
-                <div class="carousel-ImageAndContent-flex-kRowOl">
-                  <div class="carousel-image-wrapper-drcWis">
-                    <div class="background-image-oyalu" height="100%" width="100%">
-                      <picture type="image">
-                        <source srcset="images/carousel-desktop-1.jpg" media="(min-width: 1024px)">
-                        <img src="images/carousel-desktop-1.jpg"
-                          alt="Abc Defghij klmnop qrstu vwxyz Abcdefg Hijk lmn Opqrs" loading="eager">
-                      </picture>
-                    </div>
+          
+          <div class="carousel-inner-gRjVHm" data-test-id="carousel-container">
+            <div class="active cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
+  
+              <div class="carousel-ImageAndContent-flex-kRowOl">
+                <div class="carousel-image-wrapper-drcWis">
+                  <div class="background-image-oyalu" height="100%" width="100%">
+                    <picture type="image">
+                      <source srcset="images/carousel-desktop-1.jpg" media="(min-width: 1024px)">
+                      <img src="images/test-carousel-mobile-1.jpg"
+                        alt="Abc Defghij klmnop qrstu vwxyz Abcdefg Hijk lmn Opqrs" loading="eager">
+                    </picture>
                   </div>
-    
-                  <div class="carousel-captions-wrapper carousel-caption">
-                    <div class="carousel-flex-content-hGXIOq active">
-                      <h1 data-test-id="homepage-hero-slide-2-header" 
-                        class="headline-styled-fsZndk">Qlq, Ozm & Cqwf po Ztindc Qpoiuasdf</h1>
-                      <p data-test-id="homepage-hero-slide-2-subhead"
-                        class="subhead-jeqlYi">Otd dfs pasilavakxjd paofidjdks qgs bwey. Xxxxxxx Aaaa+ is now $6,666 <del>$6,666</del>. Xxxxxxx Bbbbb is now $6,666 <del>$6,666</del>.</p>
-                      <div class="flex-button-wrapper-bcSaMr">
-                        <a class="button-cta-1-bLuyKs ds__input" onclick="toggleScrollBar()"
-                          data-test-id="homepage-hero-slide-2-cta-1">Explore Bbbbb</a>
-                        <a class="button-cta-2-hcatEQ ds__input" onclick="toggleScrollBar()"
-                          data-test-id="homepage-hero-slide-2-cta-2">Explore Aaaa+</a>
-                      </div>
+                </div>
+  
+                <div class="carousel-captions-wrapper">
+                  <div class="carousel-flex-content-hGXIOq active">
+                    <h1 data-test-id="homepage-hero-slide-1-header" 
+                      class="headline-styled-fsZndk">Qlq, Ozm & Cqwf po Ztindc Qpoiuasdf</h1>
+                    <p data-test-id="homepage-hero-slide-1-subhead"
+                      class="subhead-jeqlYi">Otd dfs pasilavakxjd paofidjdks qgs bwey. Xxxxxxx Aaaa+ is now $6,666 <del>$6,666</del>. Xxxxxxx Bbbbb is now $6,666 <del>$6,666</del>.</p>
+                    <div class="flex-button-wrapper-bcSaMr">
+                      <a class="button-cta-1-bLuyKs ds__input" onclick="return false;"
+                        data-test-id="homepage-hero-slide-1-cta-1">Explore Bbbbb</a>
+                      <a class="button-cta-2-hcatEQ ds__input" onclick="return false;"
+                        data-test-id="homepage-hero-slide-1-cta-2">Explore Aaaa+</a>
                     </div>
                   </div>
                 </div>
-    
               </div>
-    
-              <div class="carousel-item cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
-    
-                <div class="carousel-ImageAndContent-flex-kRowOl">
-                  <div class="carousel-image-wrapper-drcWis">
-                    <div class="background-image-oyalu" height="100%" width="100%">
-                      <picture type="image">
-                        <source srcset="images/carousel-desktop-2.jpg" media="(min-width: 1024px)">
-                        <img src="images/carousel-desktop-2.jpg"
-                          alt="Two Xxxxxxx members using their Xxxxxxx Aaaaa and Bbbbb" loading="eager">
-                      </picture>
-                    </div>
-                  </div>
-    
-                  <div class="carousel-captions-wrapper carousel-caption">
-                    <div class="carousel-flex-content-hGXIOq">
-                      <h1 data-test-id="homepage-hero-slide-2-header" 
-                        class="headline-styled-fsZndk">Gwer-slkdsf oxkjwje dx dfgg wjx naf</h1>
-                      <p data-test-id="homepage-hero-slide-2-subhead"
-                        class="subhead-jeqlYi">Try Xxxxxxx classes free for 66 days. Zzx, dfgg, bnm, or sdftyfd no matter the time or the place with the Xxxxxxx Ddd.</p>
-                      <div class="flex-button-wrapper-bcSaMr">
-                        <a class="button-cta-1-bLuyKs ds__input" onclick="toggleScrollBar()"
-                          data-test-id="homepage-hero-slide-2-cta-1">Get 66 days free</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-    
-              <div class="carousel-item cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
-                <div class="carousel-ImageAndContent-flex-kRowOl">
-                  <div class="carousel-image-wrapper-drcWis">
-                    <video src="images/carousel-video-3-compressed.mp4" muted autoplay loop preload="auto" playsinline class="slide-video-juHCdc"></video>
-                  </div>
-    
-                  <div class="carousel-captions-wrapper carousel-caption">
-                    <div class="carousel-flex-content-hGXIOq">
-                      <span data-test-id="homepage-hero-slide-2-eyebrow" 
-                        class="eyebrow-styled-xCLtQ">Byp Ndf Xxxxxxx Wqqsc</span>
-                      <h1 data-test-id="homepage-hero-slide-2-header" 
-                        class="headline-styled-fsZndk">I aasdfhg xcv dr adga, adfhj, zfx mdtd</h1>
-                      <p data-test-id="homepage-hero-slide-2-subhead"
-                        class="subhead-jeqlYi">Starting at $66/mo, the Xxxxxxx Ggggg will help you dfgjn dzjd cccccccc qrwqwrjg mzmdg.¹</p>
-                      <div class="flex-button-wrapper-bcSaMr">
-                        <a class="button-cta-1-bLuyKs ds__input " onclick="toggleScrollBar()"
-                          data-test-id="homepage-hero-slide-2-cta-1">Explore Ggggg</a>
-                      </div>
-    
-                      <div class="jMCrIK">
-                        <h2 data-test-id="homepage-hero-slide-3-support" class="slide-support-text-gHUoen">
-                          <span data-md="true">Nsf-Werydf Ojfdgodfgg poiuqwnerw*</span>
-                        </h2>
-                      </div>
-    
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
-    
-              <div class="carousel-item cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
-    
-                <div class="carousel-ImageAndContent-flex-kRowOl">
-                  <div class="carousel-image-wrapper-drcWis">
-                    <div class="background-image-oyalu" height="100%" width="100%">
-                      <picture type="image">
-                        <source srcset="images/carousel-desktop-4.jpg" media="(min-width: 1024px)">
-                        <img src="images/carousel-desktop-4.jpg"
-                          alt="Two Xxxxxxx members using their Xxxxxxx Aaaa and Bbbbb" loading="eager">
-                      </picture>
-                    </div>
-                  </div>
-    
-                  <div class="carousel-captions-wrapper carousel-caption">
-                    <div class="carousel-flex-content-hGXIOq">
-                      <span data-test-id="homepage-hero-slide-2-eyebrow" 
-                        class="eyebrow-styled-xCLtQ">Xxxxxxx Ddd</span>
-                      <h1 data-test-id="homepage-hero-slide-2-header" 
-                        class="headline-styled-fsZndk">Classes for The Gsdgd Wweriudf</h1>
-                      <p data-test-id="homepage-hero-slide-2-subhead"
-                        class="subhead-jeqlYi">Try Xxxxxxx's sdfgjdf classes free for 66 days. Pqoq df cvbmn fdghd, zddh fjfg Ddd, and sdf'g wyw aasd bzxqq mbm.*</p>
-                      <div class="flex-button-wrapper-bcSaMr">
-                        <a class="button-cta-1-bLuyKs ds__input " onclick="toggleScrollBar()"
-                          data-test-id="homepage-hero-slide-2-cta-1">Get 66 days free</a>
-                        <!--
-                        <a class="button-cta-2-hcatEQ ds__input " href="/"
-                          data-test-id="homepage-hero-slide-2-cta-2">Explore Bbbbb</a>
-                          -->
-                      </div>
-    
-                      <div class="jMCrIK">
-                        <h2 data-test-id="homepage-hero-slide-3-support" class="slide-support-text-gHUoen">
-                          <span data-md="true">New Ddd Members only. $66.66/mo after trial unless canceled. Cancel anytime before free trial ends. Full terms at www.xxxxxxxxxx.com/Ddd</span>
-                        </h2>
-                      </div>
-                      
-                    </div>
-                  </div>
-                </div>
-    
-              </div>
+  
             </div>
-    
-    
-            <div class="carousel-indicators slide-buttons-wrapper-wceIy">
-              <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-              class="slide-button-hdopKD active" aria-current="true" aria-label="Slide 1">
-              <span class="slide-button-span-bzeOpQ">
-              </span>
-              </button>
-              <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                class="slide-button-hdopKD" aria-label="Slide 2">
-                <span class="slide-button-span-bzeOpQ">
-                </span>
-              </button>
-              <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                class="slide-button-hdopKD" aria-label="Slide 3">
-                <span class="slide-button-span-bzeOpQ">
-                </span>
-              </button>
-              <button data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                class="slide-button-hdopKD" aria-label="Slide 4">
-                <span class="slide-button-span-bzeOpQ">
-                </span>
-              </button>
+  
+            <div class="cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
+  
+              <div class="carousel-ImageAndContent-flex-kRowOl">
+                <div class="carousel-image-wrapper-drcWis">
+                  <div class="background-image-oyalu" height="100%" width="100%">
+                    <picture type="image">
+                      <source srcset="images/carousel-desktop-2.jpg" media="(min-width: 1024px)">
+                      <img src="images/carousel-desktop-2.jpg"
+                        alt="Two Xxxxxxx members using their Xxxxxxx Aaaaa and Bbbbb" loading="eager">
+                    </picture>
+                  </div>
+                </div>
+  
+                <div class="carousel-captions-wrapper">
+                  <div class="carousel-flex-content-hGXIOq">
+                    <h1 data-test-id="homepage-hero-slide-2-header" 
+                      class="headline-styled-fsZndk">Gwer-slkdsf oxkjwje dx dfgg wjx naf</h1>
+                    <p data-test-id="homepage-hero-slide-2-subhead"
+                      class="subhead-jeqlYi">Try Xxxxxxx classes free for 66 days. Zzx, dfgg, bnm, or sdftyfd no matter the time or the place with the Xxxxxxx Ddd.</p>
+                    <div class="flex-button-wrapper-bcSaMr">
+                      <a class="button-cta-1-bLuyKs ds__input" onclick="return false;"
+                        data-test-id="homepage-hero-slide-2-cta-1">Get 66 days free</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+  
             </div>
+  
+            <div class="cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
+              <div class="carousel-ImageAndContent-flex-kRowOl">
+                <div class="carousel-image-wrapper-drcWis">
+                  <video src="images/carousel-video-3-compressed.mp4" 
+                  preload="none" muted autoplay loop preload="auto" playsinline 
+                    class="slide-video-juHCdc"></video>
+                </div>
+  
+                <div class="carousel-captions-wrapper">
+                  <div class="carousel-flex-content-hGXIOq">
+                    <span data-test-id="homepage-hero-slide-3-eyebrow" 
+                      class="eyebrow-styled-xCLtQ">Byp Ndf Xxxxxxx Wqqsc</span>
+                    <h1 data-test-id="homepage-hero-slide-3-header" 
+                      class="headline-styled-fsZndk">I aasdfhg xcv dr adga, adfhj, zfx mdtd</h1>
+                    <p data-test-id="homepage-hero-slide-3-subhead"
+                      class="subhead-jeqlYi">Starting at $66/mo, the Xxxxxxx Ggggg will help you dfgjn dzjd cccccccc qrwqwrjg mzmdg.¹</p>
+                    <div class="flex-button-wrapper-bcSaMr">
+                      <a class="button-cta-1-bLuyKs ds__input " onclick="return false;"
+                        data-test-id="homepage-hero-slide-3-cta-1">Explore Ggggg</a>
+                    </div>
+  
+                    <div class="jMCrIK">
+                      <h2 data-test-id="homepage-hero-slide-3-support" class="slide-support-text-gHUoen">
+                        <span data-md="true">Nsf-Werydf Ojfdgodfgg poiuqwnerw*</span>
+                      </h2>
+                    </div>
+  
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
+  
+              <div class="carousel-ImageAndContent-flex-kRowOl">
+                <div class="carousel-image-wrapper-drcWis">
+                  <div class="background-image-oyalu" height="100%" width="100%">
+                    <picture type="image">
+                      <source srcset="images/carousel-desktop-4.jpg" media="(min-width: 1024px)">
+                      <img src="images/carousel-desktop-4.jpg"
+                        alt="Two Xxxxxxx members using their Xxxxxxx Aaaa and Bbbbb" loading="eager">
+                    </picture>
+                  </div>
+                </div>
+  
+                <div class="carousel-captions-wrapper">
+                  <div class="carousel-flex-content-hGXIOq">
+                    <span data-test-id="homepage-hero-slide-4-eyebrow" 
+                      class="eyebrow-styled-xCLtQ">Xxxxxxx Ddd</span>
+                    <h1 data-test-id="homepage-hero-slide-4-header" 
+                      class="headline-styled-fsZndk">Classes for The Gsdgd Wweriudf</h1>
+                    <p data-test-id="homepage-hero-slide-4-subhead"
+                      class="subhead-jeqlYi">Try Xxxxxxx's sdfgjdf classes free for 66 days. Pqoq df cvbmn fdghd, zddh fjfg Ddd, and sdf'g wyw aasd bzxqq mbm.*</p>
+                    <div class="flex-button-wrapper-bcSaMr">
+                      <a class="button-cta-1-bLuyKs ds__input " onclick="return false;"
+                        data-test-id="homepage-hero-slide-4-cta-1">Get 66 days free</a>
+                      <!--
+                      <a class="button-cta-2-hcatEQ ds__input " href="/"
+                        data-test-id="homepage-hero-slide-2-cta-2">Explore Bbbbb</a>
+                        -->
+                    </div>
+  
+                    <div class="jMCrIK">
+                      <h2 data-test-id="homepage-hero-slide-3-support" class="slide-support-text-gHUoen">
+                        <span data-md="true">New Ddd Members only. $66.66/mo after trial unless canceled. Cancel anytime before free trial ends. Full terms at www.xxxxxxxxxx.com/Ddd</span>
+                      </h2>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+
+          <!-- above is wrapper for carousel slide contents-->
+          <!-- below is wrapper for carousel controls (indicators, arrows, pause buttons)-->
     
-    
-    
-            <button class="slide-arrows-ecjkKh slide-arrow-left-cCoBrd carousel-control-prev" type="button"
-              data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-              <svg viewBox="0 0 26 19" role="img" width="70px" style="transform: rotate3d(0, 0, 1, 90deg);">
-                <title>Chevron</title>
-                <path d="M13 12.49l-8-8M21 4.49l-8.35 8.35" style="stroke: white;"></path>
-              </svg>
-              <!-- 
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-              -->
+          <div class="carousel-indicators slide-buttons-wrapper-wceIy">
+            <button class="slide-button-hdopKD" aria-current="true" aria-label="Slide 1">
+              <span class="slide-button-span-bzeOpQ active"></span>
             </button>
-            <button class="slide-arrows-ecjkKh slide-arrow-right-kiWcOt carousel-control-next" type="button"
-              data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-              <svg viewBox="0 0 26 19" role="img" width="70px" style="transform: rotate3d(0, 0, 1, -90deg);">
-                <title>Chevron</title>
-                <path d="M13 12.49l-8-8M21 4.49l-8.35 8.35" style="stroke: white;"></path>
-              </svg>
-              <!--
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-              -->
+            <button class="slide-button-hdopKD" aria-label="Slide 2">
+              <span class="slide-button-span-bzeOpQ"></span>
+            </button>
+            <button class="slide-button-hdopKD" aria-label="Slide 3">
+              <span class="slide-button-span-bzeOpQ"></span>
+            </button>
+            <button class="slide-button-hdopKD" aria-label="Slide 4">
+              <span class="slide-button-span-bzeOpQ"></span>
             </button>
           </div>
+    
+          <!-- prev button:-->
+    
+          <button class="slide-arrows-ecjkKh slide-arrow-left-cCoBrd" type="button">
+            <svg viewBox="0 0 26 19" role="img" width="70px" style="transform: rotate3d(0, 0, 1, 90deg);">
+              <title>Chevron</title>
+              <path d="M13 12.49l-8-8M21 4.49l-8.35 8.35" style="stroke: white;"></path>
+            </svg>
+          </button>
+
+          <!-- next button:-->
+
+          <button class="slide-arrows-ecjkKh slide-arrow-right-kiWcOt" type="button">
+            <svg viewBox="0 0 26 19" role="img" width="70px" style="transform: rotate3d(0, 0, 1, -90deg);">
+              <title>Chevron</title>
+              <path d="M13 12.49l-8-8M21 4.49l-8.35 8.35" style="stroke: white;"></path>
+            </svg>
+          </button>
+
+          <button class="pause-button-wrapper-jSWYiy">
+            <svg aria-label="Pause" fill="#ffffff" role="img"
+              viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" class="pause-play-svg-ffHQEO">
+              <g fill-rule="evenodd">
+                <path
+                  d="M17 .25C7.75.25.25 7.75.25 17S7.75 33.75 17 33.75 33.75 26.25 33.75 17 26.25.25 17 .25zm0 1.5c8.422 0 15.25 6.828 15.25 15.25S25.422 32.25 17 32.25 1.75 25.422 1.75 17 8.578 1.75 17 1.75z">
+                </path>
+                <g transform="translate(12 11.667)">
+                  <rect width="2.667" height="12" rx="1"></rect>
+                  <rect width="2.667" height="12" x="6.333" rx="1"></rect>
+                </g>
+              </g>
+            </svg>
+            <!--  
+            <svg aria-label="Play" fill="#ffffff" role="img" viewBox="0 0 34 34"
+              xmlns="http://www.w3.org/2000/svg" class="pause-play-svg-ffHQEO">
+              <g fill-rule="nonzero">
+                <path
+                  d="M17 .25C7.75.25.25 7.75.25 17S7.75 33.75 17 33.75 33.75 26.25 33.75 17 26.25.25 17 .25zm0 1.5c8.422 0 15.25 6.828 15.25 15.25S25.422 32.25 17 32.25 1.75 25.422 1.75 17 8.578 1.75 17 1.75z">
+                </path>
+                <path
+                  d="M15.436 11.411l6.812 5.476a1 1 0 010 1.559l-6.812 5.476a1 1 0 01-1.627-.78V12.192a1 1 0 011.627-.78z">
+                </path>
+              </g>
+            </svg>
+            -->
+          </button>
         </section>
           
     <div class="sc-52bb8e79-0 jEGArX">
@@ -808,6 +826,9 @@
           </button>
         </span>
       </div>
+
+
+      
       <hr class="sc-52bb8e79-4 dcBrbi">
     </div>
 
@@ -977,6 +998,9 @@
     </div>
   </div>
   <script src="javascript.js"></script>
+  <script src="scripts/changeWhenResize.js"></script>
+  <script src="scripts/carouselPlayPause.js"></script>
+  <script src="scripts/carouselSwipe.js"></script>
 </body>
 
 </html>
