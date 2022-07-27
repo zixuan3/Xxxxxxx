@@ -1,28 +1,3 @@
-/*fCjOYM(fCjOYM) span tag. styled-display-fCjOYM*/
-.styled-display-fCjOYM {
-    font-family: brandon-grotesque, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: block;
-    font-size: 22px;
-    line-height: 1.45;
-    letter-spacing: 2.2px;
-}
-
-@media (min-width: 768px) {
-    .styled-display-fCjOYM {
-        font-size: 28px;
-        line-height: 1.25;
-        letter-spacing: 2.8px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .styled-display-fCjOYM {
-        font-size: 32px;
-        letter-spacing: 3.2px;
-    }
-}
 
 
 /*gyqVlX(gyqVlX) a tag. full-width-link. */
@@ -234,9 +209,13 @@
 }
 
 .carousel-captions-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*
     position: relative;
     width: 100%;
-    /* height: 100%; */
+    */
 }
 
 /*gHUoen() slide-support-text-gHUoen: h2 tag of homepage-hero-slide-support. small and descriptive text */
@@ -485,10 +464,28 @@
     font-family: brandon-grotesque, sans-serif !important;
 }
 
+.button-cta-1-bLuyKs > :not(svg) {
+    -webkit-box-align: center;
+    align-items: center;
+    inset: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+}
+
 .button-cta-1-bLuyKs:hover:not(:disabled) {
     background-color: rgb(208, 12, 42);
     border-color: rgb(208, 12, 42);
-    color: rgb(255, 255, 255);
+}
+
+.button-cta-1-bLuyKs svg {
+    transition: all 0.15s ease-in-out 0s;
+    fill: rgb(255, 255, 255);
+}
+
+.button-cta-1-bLuyKs svg.icon-after {
+    margin-left: 1rem;
 }
 
 /*hcatEQ a tag call to action button type 2 */

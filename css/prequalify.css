@@ -1,8 +1,4 @@
-body a, body button, body [role="button"], body [type="button"], body [type="submit"] {
-    cursor: pointer;
-}
-
-.jEGArX {
+.anti-flash-white-background {
     background-color: rgb(245, 247, 249);
 }
 
@@ -42,68 +38,7 @@ body a, body button, body [role="button"], body [type="button"], body [type="sub
     margin-left: 6px;
 }
 
-.daJQoZ {
-    color: rgb(24, 26, 29);
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    transition: color 0.15s ease-in-out 0s;
-    font-size: 14px;
-    line-height: 20px;
-}
 
-@media (min-width: 768px) {
-    .daJQoZ {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .daJQoZ {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 768px) {
-    .daJQoZ {
-        line-height: 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .daJQoZ {
-        line-height: 20px;
-    }
-}
-
-.daJQoZ span {
-    font-size: 14px;
-    line-height: 20px;
-}
-
-@media (min-width: 768px) {
-    .daJQoZ span {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .daJQoZ span {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 768px) {
-    .daJQoZ span {
-        line-height: 20px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .daJQoZ span {
-        line-height: 20px;
-    }
-}
 
 .jTXkWB {
     padding: 3px 0px 0px 20px;
