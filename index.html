@@ -9,103 +9,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/commonStyles.css">
+  <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/carousel-pause-button.css">
+  <link rel="stylesheet" href="css/prequalify.css">
+  <link rel="stylesheet" href="css/BellyBandProducts.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
   <style>
-    a,
-    abbr,
-    acronym,
-    address,
-    applet,
-    article,
-    aside,
-    audio,
-    b,
-    big,
-    blockquote,
-    body,
-    canvas,
-    caption,
-    center,
-    cite,
-    code,
-    dd,
-    del,
-    details,
-    dfn,
-    div,
-    dl,
-    dt,
-    em,
-    embed,
-    fieldset,
-    figcaption,
-    figure,
-    footer,
-    form,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    header,
-    hgroup,
-    html,
-    i,
-    iframe,
-    img,
-    ins,
-    kbd,
-    label,
-    legend,
-    li,
-    mark,
-    menu,
-    nav,
-    object,
-    ol,
-    output,
-    p,
-    pre,
-    q,
-    ruby,
-    s,
-    samp,
-    section,
-    small,
-    span,
-    strike,
-    strong,
-    sub,
-    summary,
-    sup,
-    table,
-    tbody,
-    td,
-    tfoot,
-    th,
-    thead,
-    time,
-    tr,
-    tt,
-    u,
-    ul,
-    var,
-    video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
       font: inherit;
-      vertical-align: baseline
+      vertical-align: baseline;
     }
 
     article,
@@ -160,8 +81,9 @@
     }
 
     *,
-    :after,
-    :before {
+    ::before,
+    ::after
+    {
       box-sizing: border-box;
     }
 
@@ -175,21 +97,22 @@
       text-decoration: none
     }
 
-    [type=button],
-    [type=submit],
-    button {
-      appearance: none;
-      background: 0 0;
-      border-radius: 0;
-      border: 0;
-      color: inherit;
-      cursor: pointer;
-      font-size: inherit;
-      font-family: inherit;
-      margin: 0;
-      overflow: visible;
-      padding: 0;
-      text-align: left
+    button, input {
+        appearance: none;
+        background: none;
+        border-radius: 0px;
+        border: 0px;
+        color: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        margin: 0px;
+        overflow: visible;
+        padding: 0px;
+        text-align: left;
+    }
+
+    body a, body button, body [role="button"], body [type="button"], body [type="submit"] {
+        cursor: pointer;
     }
 
     [type=button][data-focus-method=mouse],
@@ -226,6 +149,7 @@
       color: #181a1d;
       -webkit-font-smoothing: antialiased
     }
+
 
     #root {
       float: left;
@@ -382,13 +306,6 @@
     }
   </style>
 
-  <link rel="stylesheet" href="css/commonStyles.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/prequalify.css">
-  <link rel="stylesheet" href="css/BellyBandProducts.css">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -410,8 +327,8 @@
 
   <div id="root">
 
-    <a class="font-1314-dYhvXN ds__link full-width-link-gyqVlX" href="/" target="_blank">
-      <span class="styled-display-fCjOYM">
+    <a class="styled-link-contains-span ds__link full-width-link-gyqVlX" href="/" target="_blank">
+      <span class="styled-display">
         <div data-element-id="banner" class="banner-hTVjSJ">
           <div>
             <span data-test-id="July1.homepageBannerText" class="homepage-banner-text-lnVZPD">Rent Xxxxxxx Xxxx for $88/mo. Cancel anytime, free returns. </span>
@@ -433,139 +350,180 @@
             data-test-id="brandLogo" class="logo-svg-gLYEcu">
             <title>Brand Logo</title>
             <path
-              d="M222.13,64.27C167.64,73.36,118.85,107.49,90,154.32c-23,37.35-28.57,78.25-28.57,121.12V381.19A18,18,0,0,0,79.1,398.88h34.39v33.86a18,18,0,0,0,17.69,17.69H379.07a18,18,0,0,0,17.69-17.69V398.61H432.9a18,18,0,0,0,17.69-17.69V255.84C449,136,340.8,44.48,222.13,64.27ZM102.08,215c26.45-99.64,144.2-149,233.6-97,49.33,28.65,78.75,81.13,79.53,137.85V363.23H379.07a18,18,0,0,0-17.69,17.69v34.13H148.87V381.19a18,18,0,0,0-17.69-17.7H96.79v-58.8C96.79,275,94.4,244,102.08,215Z"/><path d="M199.26,312.57c16.12,16.12,41.15-8.89,25-25l-44.23-44.23c-16.12-16.12-41.14,8.89-25,25Z"/><path d="M312.73,312.57,357,268.34c16.12-16.12-8.89-41.14-25-25l-44.23,44.23C271.59,303.67,296.6,328.7,312.73,312.57Z">
+              d="M 0 0 l 30 0 l 0 45 l -15 -20 l -15 20 L 0 0">
+            </path>
+          </svg>
+
+          <svg role="img" width="156" height="46" viewBox="0 0 156 46"
+            data-test-id="brandLogo" class="logo-svg-largeScreen-euZINs">
+            <title>Brand Logo</title>
+            <path
+              d="M 0 0 l 30 0 l 0 45 l -15 -20 l -15 20 L 0 0 m 45 15 L 45 30 L 55 30 L 55 25 L 50 25 L 50 15 L 45 15 M 60 15 L 60 30 L 70 30 L 70 15 L 67 15 L 67 27 L 63 27 L 63 18 L 67 18 L 67 15 L 60 15 M 85 15 L 85 18 L 78 18 L 78 27 L 82 27 L 82 23 L 85 23 L 85 30 L 75 30 L 75 15 M 90 15 L 90 30 L 100 30 L 100 27 L 93 27 L 93 18 L 97 18 L 97 27 L 100 27 L 100 15 Z">
             </path>
           </svg>
         </a>
       </div>
+
+      <!-- Below 1024px of screen width, the .navbar-textbutton-display-wrapper will disappear -->
+      <div class="navbar-textbutton-display-wrapper">
+        <div data-focus-guard="true" tabindex="-1"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;">
+        </div>
+        <div data-focus-guard="true" tabindex="-1"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;">
+        </div>
+        <div data-focus-lock-disabled="disabled" class="navbar-textbutton-flex-kqBshQ focus-lock">
+          <ul data-test-id="productsMenuList" class="navbar-productsMenuList-cmNKxl">
+            <li>
+              <button type="button"
+                class="navbar-productsMenu-gDRBgt button-cta-1-bLuyKs"
+                aria-expanded="false" data-test-id="nav.aaaaa">
+                <span class="navbar-productsMenu-span">Aaaaa</span>
+                <svg
+                  height="10" viewBox="0 0 8 12" fill="none" aria-labelledby="cl632uk100001376p86c6jhv8"
+                  class="down-arrow-icon icon-after" focusable="false"
+                  preserveAspectRatio="xMidYMid meet">
+                  <title id="cl632uk100001376p86c6jhv8">Arrow</title>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M.823 6.707a1.003 1.003 0 0 1 0-1.414l4.977-5a.992.992 0 0 1 1.408 0c.39.39.39 1.024 0 1.414 0 0-4.204 3.74-4.204 4.293 0 .552 4.204 4.293 4.204 4.293a1 1 0 0 1 0 1.414.992.992 0 0 1-1.408 0l-4.977-5Z"
+                    fill="inherit"></path>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button type="button"
+                class="navbar-productsMenu-gDRBgt button-cta-1-bLuyKs"
+                aria-expanded="false" data-test-id="nav.bbbbb">
+                <span class="navbar-productsMenu-span">Bbbbb</span>
+                <svg
+                  height="10" viewBox="0 0 8 12" fill="none" aria-labelledby="cl632uk100001376p86c6jhv8"
+                  class="down-arrow-icon icon-after" focusable="false"
+                  preserveAspectRatio="xMidYMid meet">
+                  <title id="cl632uk100001376p86c6jhv8">Arrow</title>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M.823 6.707a1.003 1.003 0 0 1 0-1.414l4.977-5a.992.992 0 0 1 1.408 0c.39.39.39 1.024 0 1.414 0 0-4.204 3.74-4.204 4.293 0 .552 4.204 4.293 4.204 4.293a1 1 0 0 1 0 1.414.992.992 0 0 1-1.408 0l-4.977-5Z"
+                    fill="inherit"></path>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button type="button"
+                class="navbar-productsMenu-gDRBgt button-cta-1-bLuyKs"
+                aria-expanded="false" data-test-id="nav.cccccccc">
+                <span class="navbar-productsMenu-span">Cccccccc</span>
+                <svg
+                  height="10" viewBox="0 0 8 12" fill="none" aria-labelledby="cl632uk100001376p86c6jhv8"
+                  class="down-arrow-icon icon-after" focusable="false"
+                  preserveAspectRatio="xMidYMid meet">
+                  <title id="cl632uk100001376p86c6jhv8">Arrow</title>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M.823 6.707a1.003 1.003 0 0 1 0-1.414l4.977-5a.992.992 0 0 1 1.408 0c.39.39.39 1.024 0 1.414 0 0-4.204 3.74-4.204 4.293 0 .552 4.204 4.293 4.204 4.293a1 1 0 0 1 0 1.414.992.992 0 0 1-1.408 0l-4.977-5Z"
+                    fill="inherit"></path>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <button type="button"
+                class="navbar-productsMenu-gDRBgt button-cta-1-bLuyKs"
+                aria-expanded="false" data-test-id="nav.ddd">
+                <span class="navbar-productsMenu-span">Ddd</span>
+                <svg
+                  height="10" viewBox="0 0 8 12" fill="none" aria-labelledby="cl632uk100001376p86c6jhv8"
+                  class="down-arrow-icon icon-after" focusable="false"
+                  preserveAspectRatio="xMidYMid meet">
+                  <title id="cl632uk100001376p86c6jhv8">Arrow</title>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M.823 6.707a1.003 1.003 0 0 1 0-1.414l4.977-5a.992.992 0 0 1 1.408 0c.39.39.39 1.024 0 1.414 0 0-4.204 3.74-4.204 4.293 0 .552 4.204 4.293 4.204 4.293a1 1 0 0 1 0 1.414.992.992 0 0 1-1.408 0l-4.977-5Z"
+                    fill="inherit"></path>
+                </svg>
+              </button>
+            </li>
+            <li data-test-id="nav.eeeeeeeeeee">
+              <a
+                class="styled-link-contains-span ds__link navbar-productLink-without-menu"
+                href="#" onclick="return false;">
+                <span
+                  class="styled-display">
+                  <div class="navbar-productLink-style-wrapper">
+                    <div>
+                      <span>Eeeeeeeeeee</span>
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+            <li data-test-id="nav.fffffff">
+              <a
+                class="styled-link-contains-span ds__link navbar-productLink-without-menu"
+                href="#" onclick="return false;">
+                <span
+                  class="styled-display">
+                  <div class="navbar-productLink-style-wrapper">
+                    <div>
+                      <span>Fffffff</span>
+                    </div>
+                  </div>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div data-focus-guard="true" tabindex="-1"
+          style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;">
+        </div>
+      </div>
+      <!-- Below 1024px of screen width, the .navbar-textbutton-display-wrapper will disappear -->
+
+
       <div data-focus-guard="true" tabindex="-1"
         style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"></div>
       <div data-focus-guard="true" tabindex="-1"
         style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"></div>
 
-      <!-- Below 1024px of screen width, the .navbar-textbutton-flex-kqBshQ will disappear -->
-      <div data-focus-lock-disabled="disabled" class="navbar-textbutton-flex-kqBshQ focus-lock larger1024">
-        <ul data-test-id="productsMenuList" class="navbar-productsMenuList-cmNKxl">
-          <li>
-            <button aria-expanded="false" data-test-id="nav.Aaaaa" class="navbar-productsMenu-gDRBgt">
-              <div>
-                <span>Aaaaa</span>
-                <svg viewBox="0 0 12 7" role="img" aria-hidden="true"
-                  style="transform: rotate3d(0, 0, 1, 0deg);">
-                  <title>chevron</title>
-                  <path
-                    d="M5.981 4.92l-4.7-4.7A.75.75 0 0 0 .22 1.28l5.163 5.163a.748.748 0 0 0           .598.217.748.748 0 0 0 .6-.217l5.162-5.163a.75.75 0 0 0-1.06-1.06L5.98 4.92z">
-                  </path>
-                </svg>
-              </div>
-            </button>
-          </li>
-          <li>
-            <button aria-expanded="false" data-test-id="nav.Bbbbb" class="navbar-productsMenu-gDRBgt">
-              <div>
-                <span>Bbbbb</span>
-                <svg viewBox="0 0 12 7" role="img" aria-hidden="true"
-                  style="transform: rotate3d(0, 0, 1, 0deg);">
-                  <title>chevron</title>
-                  <path
-                    d="M5.981 4.92l-4.7-4.7A.75.75 0 0 0 .22 1.28l5.163 5.163a.748.748 0 0 0           .598.217.748.748 0 0 0 .6-.217l5.162-5.163a.75.75 0 0 0-1.06-1.06L5.98 4.92z">
-                  </path>
-                </svg>
-              </div>
-            </button>
-          </li>
-          <li>
-            <button aria-expanded="false" data-test-id="nav.Cccccccc" class="navbar-productsMenu-gDRBgt">
-              <div>
-                <span>Cccccccc</span>
-                <svg viewBox="0 0 12 7" role="img" aria-hidden="true"
-                  style="transform: rotate3d(0, 0, 1, 0deg);">
-                  <title>chevron</title>
-                  <path
-                    d="M5.981 4.92l-4.7-4.7A.75.75 0 0 0 .22 1.28l5.163 5.163a.748.748 0 0 0           .598.217.748.748 0 0 0 .6-.217l5.162-5.163a.75.75 0 0 0-1.06-1.06L5.98 4.92z">
-                  </path>
-                </svg>
-              </div>
-            </button>
-          </li>
-          <li>
-            <button aria-expanded="false" data-test-id="nav.Ddd" class="navbar-productsMenu-gDRBgt">
-              <div>
-                <span>Ddd</span>
-                <svg viewBox="0 0 12 7" role="img" aria-hidden="true"
-                  style="transform: rotate3d(0, 0, 1, 0deg);">
-                  <title>chevron</title>
-                  <path
-                    d="M5.981 4.92l-4.7-4.7A.75.75 0 0 0 .22 1.28l5.163 5.163a.748.748 0 0 0           .598.217.748.748 0 0 0 .6-.217l5.162-5.163a.75.75 0 0 0-1.06-1.06L5.98 4.92z">
-                  </path>
-                </svg>
-              </div>
-            </button>
-          </li>
-          <li>
-            <a data-test-id="nav.Eeeeeeeeeee" href="#" onclick="return false;">
-              <div class="navbar-productLink-dvFJrd">
-                <div>
-                  <span>Eeeeeeeeeee</span>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a data-test-id="nav.Ffffff" href="#" onclick="return false;">
-              <div class="navbar-productLink-dvFJrd">
-                <div>
-                  <span>Ffffff</span>
-                </div>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div data-focus-guard="true" tabindex="-1" class="larger1024"
-        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"></div>
-      <div data-focus-guard="true" tabindex="-1" class="larger1024"
-        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"></div>
-      <div data-focus-guard="true" tabindex="-1" class="larger1024"
-        style="width: 1px; height: 0px; padding: 0px; overflow: hidden; position: fixed; top: 1px; left: 1px;"></div>
-      <!-- Below 1024px of screen width, the .navbar-textbutton-flex-kqBshQ will disappear -->
 
       <div data-focus-lock-disabled="disabled" class="navbar-svgbutton-flex-fLGqrl focus-lock">
         <ul class="navbar-svgbutton-ul-kgbpws">
-          <li>
+          <!-- hide .hideListItemWhenLess1024 when screen width < 1024 px-->
+          <li class="hideListItemWhenLess1024">
             <button data-test-id="location" aria-label="Location menu" aria-expanded="false"
               class="navbar-svgbutton-iemeqy">
-              <svg role="presentation" width="32" height="32" viewBox="0 0 32 32"
-                title="Location-i10n">
-                <title>Location-i10n</title>
-                <g fill="none" fill-rule="evenodd">
-                  <path d="M0 0h32v32H0z"></path>
-                  <path
-                    d="M15.5 6c2.352 0 4.484.91 6.026 2.389C23.052 9.85 24 11.87 24 14.104c0 3.08-2.941 7.23-8.5 12.521C9.94 21.333 7 17.183 7 14.105c0-2.234.948-4.254 2.474-5.716C11.016 6.91 13.148 6 15.5 6h0z"
-                    stroke="#FFF" stroke-width="2"></path>
-                  <path d="M15.5 12a2 2 0 100 4 2 2 0 000-4z" fill="#FFF" fill-rule="nonzero"></path>
+              <svg height="32" viewBox="0 0 32 32" fill="none"
+                aria-labelledby="cl60q77ke0009376pt2w6yc2r"
+                class="overflow-visibile-kbbWQF" focusable="false"
+                preserveAspectRatio="xMidYMid meet">
+                <title id="cl60q77ke0009376pt2w6yc2r">Location-i10n</title>
+                <g clip-path="url(#location_svg__a)" stroke="#FFFFFF" stroke-width="2">
+                  <path clip-rule="evenodd"
+                    d="M16.5 5c2.352 0 4.483.91 6.026 2.389C24.052 8.85 25 10.87 25 13.104c0 3.08-2.941 7.23-8.5 12.521C10.94 20.333 8 16.183 8 13.105c0-2.234.948-4.254 2.474-5.716C12.017 5.91 14.148 5 16.5 5Z">
+                  </path>
+                  <path d="M16.5 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"></path>
                 </g>
+                <defs>
+                  <clippath id="location_svg__a">
+                    <path fill="#FFFFFF" transform="translate(7 4)" d="M0 0h19v23H0z"></path>
+                  </clippath>
+                </defs>
               </svg>
             </button>
           </li>
+          <!-- hide .hideListItemWhenLess1024 when screen width < 1024 px-->
+
           <li>
             <button data-test-id="account" aria-label="Account menu" aria-expanded="false"
               class="navbar-svgbutton-iemeqy">
-              <svg role="presentation" width="32" height="32" viewBox="0 0 32 32"
-                title="Account-i10n">
-                <title>Account-i10n</title>
-                <g fill="none" fill-rule="evenodd">
-                  <path d="M0 0h32v32H0z"></path>
-                  <path d="M16 6a6 6 0 100 12 6 6 0 000-12zm0 2a4 4 0 110 8 4 4 0 010-8z" fill="#FFF"
-                    fill-rule="nonzero"></path>
-                  <path d="M27 27c0-4.97-4.925-9-11-9S5 22.03 5 27" stroke="#FFF" stroke-width="2"
-                    stroke-linecap="round"></path>
-                </g>
+              <svg height="32" viewBox="0 0 32 32" fill="none"
+                aria-labelledby="cl60q77le000a376ptf1mrh5w"
+                class="overflow-visibile-kbbWQF" focusable="false"
+                preserveAspectRatio="xMidYMid meet">
+                <title id="cl60q77le000a376ptf1mrh5w">Account</title>
+                <circle cx="16" cy="12" r="5" stroke="#FFFFFF" stroke-width="2"></circle>
+                <path d="M27 27c0-4.97-4.925-9-11-9S5 22.03 5 27" stroke="#FFFFFF" stroke-width="2"
+                  stroke-linecap="round"></path>
               </svg>
             </button>
           </li>
           <li>
-            <button data-test-id="cart">
+            <button aria-label="open cart" data-test-id="cart">
               <div class="fullwidth-container-DCMqf navbar-cart-container-gPAwpd">
                 <svg
                   height="32" viewBox="0 0 32 32" fill="none" aria-labelledby="cl58745ke0001376l8fzjtba5"
@@ -579,6 +537,19 @@
                   <circle cx="12.75" cy="25.043" r="1.75" fill="#FFFFFF"></circle>
                 </svg>
               </div>
+            </button>
+          </li>
+          <li class="showListItemWhenLess1024">
+            <button aria-expanded="false" aria-label="open sidebar navigation"
+              data-test-id="panelNavIcon">
+              <svg height="32" viewBox="0 0 32 32" fill="none"
+                aria-labelledby="cl60qhmkn002g376plicvhl99"
+                class="overflow-visibile-kbbWQF" focusable="false"
+                preserveAspectRatio="xMidYMid meet">
+                <title id="cl60qhmkn002g376plicvhl99">Menu</title>
+                <path d="M13 16.5h17M4 7.5h26M13 25.5h17" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round">
+                </path>
+              </svg>
             </button>
           </li>
         </ul>
@@ -603,8 +574,8 @@
                 <div class="carousel-image-wrapper-drcWis">
                   <div class="background-image-oyalu" height="100%" width="100%">
                     <picture type="image">
-                      <source srcset="images/carousel-desktop-1.jpg" media="(min-width: 1024px)">
-                      <img src="images/test-carousel-mobile-1.jpg"
+                      <source srcset="images/carousel-1.jpg" media="(min-width: 1024px)">
+                      <img src="images/carousel-1.jpg"
                         alt="Abc Defghij klmnop qrstu vwxyz Abcdefg Hijk lmn Opqrs" loading="eager">
                     </picture>
                   </div>
@@ -634,8 +605,8 @@
                 <div class="carousel-image-wrapper-drcWis">
                   <div class="background-image-oyalu" height="100%" width="100%">
                     <picture type="image">
-                      <source srcset="images/carousel-desktop-2.jpg" media="(min-width: 1024px)">
-                      <img src="images/carousel-desktop-2.jpg"
+                      <source srcset="images/carousel-2.jpg" media="(min-width: 1024px)">
+                      <img src="images/carousel-2.jpg"
                         alt="Two Xxxxxxx members using their Xxxxxxx Aaaaa and Bbbbb" loading="eager">
                     </picture>
                   </div>
@@ -696,8 +667,8 @@
                 <div class="carousel-image-wrapper-drcWis">
                   <div class="background-image-oyalu" height="100%" width="100%">
                     <picture type="image">
-                      <source srcset="images/carousel-desktop-4.jpg" media="(min-width: 1024px)">
-                      <img src="images/carousel-desktop-4.jpg"
+                      <source srcset="images/carousel-4.jpg" media="(min-width: 1024px)">
+                      <img src="images/carousel-4.jpg"
                         alt="Two Xxxxxxx members using their Xxxxxxx Aaaa and Bbbbb" loading="eager">
                     </picture>
                   </div>
@@ -798,7 +769,7 @@
           </button>
         </section>
           
-    <div class="sc-52bb8e79-0 jEGArX">
+    <div class="anti-flash-white-background">
       <div data-test-id="prequalify-homepage-module-heading" class="sc-52bb8e79-1 gPKhUM">
         <span
           class="Body__StyledBody-design-system__sc-8gsxju-0 czbbnx">
@@ -817,9 +788,11 @@
             fill="#4A4AF4"></path>
         </svg>
         <span aria-label="Prequalify Now"
-          class="Link__StyledLink-design-system__sc-rhf0w1-0 daJQoZ ds__link sc-52bb8e79-3 jTXkWB"><button
+          class="styled-link-contains-span ds__link sc-52bb8e79-3 jTXkWB">
+          <button
             class="sc-338cf125-0 eEMUml Afffff-site-modal " data-page-type="banner" data-sku="PL-01,PL-CL-B-01"
-            style="cursor: pointer;" aria-label="Prequalify Now - Afffff Financing (opens in modal)"><span
+            style="cursor: pointer;" aria-label="Prequalify Now - Afffff Financing (opens in modal)">
+            <span
               class="Body__StyledBody-design-system__sc-8gsxju-0 bBabwX">
               Oifdlskfgld Qqw
             </span>
@@ -858,10 +831,11 @@
 
     <nav class="sc-7bcb59ce-0 bShZoz">
       <ul class="sc-7bcb59ce-1 cmPJxL">
-        <li data-test-id="BellyBandProduct1" class="sc-afa3081-0 bgAXux"><a
-            class="font-1314-dYhvXN ds__link sc-afa3081-2 gYouRz"
-            href="/"><span
-              class="Display__StyledDisplay-design-system__sc-1hlyozm-0 fCjOYM">
+        <li data-test-id="BellyBandProduct1" class="sc-afa3081-0 bgAXux">
+          <a
+            class="styled-link-contains-span ds__link sc-afa3081-2 gYouRz"
+            href="#" onclick="return false;">
+            <span class="styled-display">
               <picture class="sc-79442073-0 hwvTNE sc-afa3081-1 eshvqo">
                 <source class="desktop" media="(min-width: 1024px)"
                   srcset="./images/bgtp-1.png">
@@ -872,13 +846,13 @@
               </picture>
               <p class="sc-afa3081-3 goLMLU">
                 Aaaaa
-                
               </p>
             </span></a></li>
-        <li data-test-id="BellyBandProduct2" class="sc-afa3081-0 bgAXux"><a
-            class="font-1314-dYhvXN ds__link sc-afa3081-2 gYouRz"
-            href="/"><span
-              class="Display__StyledDisplay-design-system__sc-1hlyozm-0 fCjOYM">
+        <li data-test-id="BellyBandProduct2" class="sc-afa3081-0 bgAXux">
+          <a
+            class="styled-link-contains-span ds__link sc-afa3081-2 gYouRz"
+            href="#" onclick="return false;">
+            <span class="styled-display">
               <picture class="sc-79442073-0 hwvTNE sc-afa3081-1 eshvqo">
                 <source class="desktop" media="(min-width: 1024px)"
                   srcset="./images/bgtp-2.png">
@@ -890,11 +864,14 @@
               <p class="sc-afa3081-3 goLMLU">
                 Bbbbb
               </p>
-            </span></a></li>
-        <li data-test-id="BellyBandProduct3" class="sc-afa3081-0 bgAXux"><a
-            class="font-1314-dYhvXN ds__link sc-afa3081-2 gYouRz"
-            href="/"><span
-              class="Display__StyledDisplay-design-system__sc-1hlyozm-0 fCjOYM">
+            </span>
+          </a>
+        </li>
+        <li data-test-id="BellyBandProduct3" class="sc-afa3081-0 bgAXux">
+          <a
+            class="styled-link-contains-span ds__link sc-afa3081-2 gYouRz"
+            href="#" onclick="return false;">
+            <span class="styled-display">
               <picture class="sc-79442073-0 hwvTNE sc-afa3081-1 eshvqo">
                 <source class="desktop" media="(min-width: 1024px)"
                   srcset="./images/bgtp-3.png">
@@ -906,11 +883,14 @@
               <p class="sc-afa3081-3 goLMLU">
                 Ggggg
               </p>
-            </span></a></li>
-        <li data-test-id="BellyBandProduct4" class="sc-afa3081-0 bgAXux"><a
-            class="font-1314-dYhvXN ds__link sc-afa3081-2 gYouRz"
-            href="/"><span
-              class="Display__StyledDisplay-design-system__sc-1hlyozm-0 fCjOYM">
+            </span>
+          </a>
+        </li>
+        <li data-test-id="BellyBandProduct4" class="sc-afa3081-0 bgAXux">
+          <a
+            class="styled-link-contains-span ds__link sc-afa3081-2 gYouRz"
+            href="#" onclick="return false;">
+            <span class="styled-display">
               <picture class="sc-79442073-0 hwvTNE sc-afa3081-1 eshvqo">
                 <source class="desktop" media="(min-width: 1024px)"
                   srcset="./images/bgtp-4.png">
@@ -922,11 +902,14 @@
               <p class="sc-afa3081-3 goLMLU">
                 Ddd
               </p>
-            </span></a></li>
-        <li data-test-id="BellyBandProduct5" class="sc-afa3081-0 bgAXux"><a
-            class="font-1314-dYhvXN ds__link sc-afa3081-2 gYouRz"
-            href="/"><span
-              class="Display__StyledDisplay-design-system__sc-1hlyozm-0 fCjOYM">
+            </span>
+          </a>
+        </li>
+        <li data-test-id="BellyBandProduct5" class="sc-afa3081-0 bgAXux">
+          <a
+            class="styled-link-contains-span ds__link sc-afa3081-2 gYouRz"
+            href="#" onclick="return false;">
+            <span class="styled-display">
               <picture class="sc-79442073-0 hwvTNE sc-afa3081-1 eshvqo">
                 <source class="desktop" media="(min-width: 1024px)"
                   srcset="./images/bgtp-5.png">
@@ -938,11 +921,14 @@
               <p class="sc-afa3081-3 goLMLU">
                 Eeeeeeeeeee
               </p>
-            </span></a></li>
-        <li data-test-id="BellyBandProduct6" class="sc-afa3081-0 bgAXux"><a target="_blank"
-            class="font-1314-dYhvXN ds__link sc-afa3081-2 gYouRz"
-            href="https://boutique.onepeloton.com/"><span
-              class="Display__StyledDisplay-design-system__sc-1hlyozm-0 fCjOYM">
+            </span>
+          </a>
+        </li>
+        <li data-test-id="BellyBandProduct6" class="sc-afa3081-0 bgAXux">
+          <a target="_blank"
+            class="styled-link-contains-span ds__link sc-afa3081-2 gYouRz"
+            href="#" onclick="return false;">
+            <span class="styled-display">
               <picture class="sc-79442073-0 hwvTNE sc-afa3081-1 eshvqo">
                 <source class="desktop" media="(min-width: 1024px)"
                   srcset="./images/bgtp-6.png">
@@ -954,7 +940,9 @@
               <p class="sc-afa3081-3 goLMLU">
                 Fffffff
               </p>
-            </span></a></li>
+            </span>
+          </a>
+        </li>
       </ul>
     </nav>
 
@@ -964,10 +952,9 @@
       <div class="Container__StyledContainer-design-system__sc-1l0wzxx-0 bzzjED sc-7bcb59ce-3 dnaPaK">
         <span data-md="true">Interested in trying Xxxxxxx for yourself?</span>
         <a aria-label="Sdf Sdfsfds"
-          class="font-1314-dYhvXN ds__link sc-7bcb59ce-4 djgEzR"
-          href="https://www.xxxxxxxxxx.com/try">
-          <span
-            class="Display__StyledDisplay-design-system__sc-1hlyozm-0 fCjOYM">Sdf Sdfsfds 
+          class="styled-link-contains-span ds__link sc-7bcb59ce-4 djgEzR"
+          href="#" onclick="return false;">
+          <span class="styled-display">Sdf Sdfsfds 
           </span>
         </a>
       </div>
@@ -998,7 +985,6 @@
     </div>
   </div>
   <script src="javascript.js"></script>
-  <script src="scripts/changeWhenResize.js"></script>
   <script src="scripts/carouselPlayPause.js"></script>
   <script src="scripts/carouselSwipe.js"></script>
 </body>
