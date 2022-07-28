@@ -1,0 +1,187 @@
+/* hide scroll bar */
+.nav-hide-scrollbar {
+    background-color: rgb(245, 247, 249);
+    overflow-x: scroll;
+}
+
+.nav-hide-scrollbar::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+    background: transparent;
+}
+
+/* ul-flex-wrapper */
+.ul-flex-wrapper {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 35px 25px 30px;
+    width: 270vw;
+}
+
+@media (min-width: 550px) {
+    .ul-flex-wrapper {
+        width: 180vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .ul-flex-wrapper {
+        max-width: 1050px;
+    }
+}
+
+@media (min-width: 800px) {
+    .ul-flex-wrapper {
+        padding: 60px 40px 30px;
+    }
+}
+
+/* li-hover-box */
+.li-hover-box {
+    background-color: rgb(249, 250, 251);
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 3%) 5px 3px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    /*https://css-tricks.com/understanding-flex-grow-flex-shrink-and-flex-basis/*/
+    height: 140px;
+    transition: all 300ms ease 0s;
+}
+
+@media (min-width: 800px) {
+    .li-hover-box:hover {
+        backface-visibility: hidden;
+        box-shadow: rgb(0 0 0 / 20%) 5px 3px 50px 0px;
+        cursor: pointer;
+        transform: translate3d(0px, 0px, 0px) scale(1.08);
+        transition: all 300ms ease 0s;
+    }
+}
+
+@media (min-width: 800px) {
+    .li-hover-box {
+        min-width: 130px;
+        max-width: 180px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .li-hover-box {
+        height: 170px;
+        min-width: 150px;
+    }
+}
+
+.li-hover-box:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+@media (min-width: 768px) {
+    .li-hover-box:not(:last-of-type) {
+        margin-right: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .li-hover-box:not(:last-of-type) {
+        margin-right: 40px;
+    }
+}
+
+/* a tag: align-child-flex-end */
+.align-child-flex-end {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+}
+
+/* picture tag: display-block-unselectable-img-cover */
+.display-block-unselectable-img-cover {
+    display: block;
+    user-select: none;
+}
+
+.display-block-unselectable-img-cover img {
+    object-fit: cover;
+    user-select: none;
+    vertical-align: middle;
+}
+
+/* picture tag: img-translate3d-left-up */
+.img-translate3d-left-up img {
+    left: 0px;
+    max-width: 120px;
+    position: absolute;
+    top: 0px;
+    transform: translate3d(-15%, -7%, 0px);
+    width: 150%;
+}
+
+@media (min-width: 380px) {
+    .img-translate3d-left-up img {
+        max-width: 135px;
+    }
+}
+
+@media (min-width: 580px) {
+    .img-translate3d-left-up img {
+        max-width: 155px;
+    }
+}
+
+@media (min-width: 768px) {
+    .img-translate3d-left-up img {
+        max-width: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-translate3d-left-up img {
+        max-width: 150px;
+    }
+}
+
+/* p tag: belly-band-product-name */
+.belly-band-product-name {
+    font-weight: 700;
+    font-family: brandon-grotesque, sans-serif;
+    letter-spacing: 0.1em;
+    line-height: 1.375em;
+    text-transform: uppercase;
+    color: rgb(101, 102, 106);
+    font-size: 9px;
+}
+
+@media (min-width: 360px) {
+    .belly-band-product-name {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 375px) {
+    .belly-band-product-name {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .belly-band-product-name {
+        font-weight: 700;
+        font-family: brandon-grotesque, sans-serif;
+        letter-spacing: 0.1em;
+        line-height: 1.375em;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
