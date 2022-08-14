@@ -7,21 +7,31 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/commonStyles.css">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <!--
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  -->
+  <link rel="stylesheet" href="css/common-styles.css">
   <link rel="stylesheet" href="css/cta-banner.css">
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/carousel-pause-button.css">
   <link rel="stylesheet" href="css/prequalify.css">
   <link rel="stylesheet" href="css/belly-band-products.css">
+  <link rel="stylesheet" href="css/get-started.css">
+  <link rel="stylesheet" href="css/rfy.css">
+  <link rel="stylesheet" href="css/cart-modal.css">
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 
 
   <style>
+    body {
+      overflow-x: hidden;
+    }
+
     html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
       margin: 0px;
       padding: 0px;
@@ -128,7 +138,7 @@
     hr {
       margin: 0
     }
-
+    
     body,
     html {
       height: 100%
@@ -140,7 +150,7 @@
     }
 
     html {
-      -webkit-text-size-adjust: 100%
+      text-size-adjust: 100%
     }
 
     body {
@@ -155,10 +165,6 @@
     #root {
       float: left;
       width: 100%
-    }
-
-    body {
-      overflow-x: hidden
     }
 
     #ie11 {
@@ -310,24 +316,8 @@
 </head>
 
 <body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-
-  <div id="ie11">
-    <div id="ie11-banner"></div>
-    <div id="ie11-content">
-      <div id="ie11-inner">
-        <h2>SITE NOT OPTIMIZED FOR INTERNET EXPLORER</h2>
-        <p>This experience is optimized for <a href="https://www.google.com/chrome/">Chrome</a>, <a
-            href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>, <a
-            href="https://support.apple.com/downloads/safari">Safari</a> and <a
-            href="https://www.microsoft.com/en-us/edge">Edge</a> browsers.<br>It looks like you're using Internet
-          Explorer, please use another browser.</p>
-      </div>
-    </div>
-  </div>
-
-  <div id="root">
-
+  <div id="__next">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
     <a class="styled-link-contains-span ds__link full-width-link-gyqVlX" href="/" target="_blank">
       <span class="styled-display">
         <div data-element-id="banner" class="banner-hTVjSJ">
@@ -338,7 +328,6 @@
         </div>
       </span>
     </a>
-
 
     <!-- sticky navbar -->
     <nav aria-label="global navigation" class="navbar-kdnToX sticky-nav-fJvVHI" data-element-id="header"
@@ -560,215 +549,188 @@
       <div aria-hidden="true" class="viewport-background-dVNoQG"></div>
     </nav>
 
-    <!--
-    <main id="main" class="main-flex-eTZRTO" data-test-id="full-height-flex">
-      <div class="lazyload-div-kKtcmG" data-test-id="lazy-loaded">
+    <section class="header carousel-section-mFWXw"
+      id="CarouselZone">
+      <div class="carousel-inner-gRjVHm" data-test-id="carousel-container">
+        <div class="active cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
+          <div class="carousel-ImageAndContent-flex-kRowOl">
+            <div class="carousel-image-wrapper-drcWis">
+              <div class="background-image-oyalu" height="100%" width="100%">
+                <picture type="image">
+                  <source srcset="images/carousel-1.jpg" media="(min-width: 1024px)">
+                  <img src="images/carousel-1.jpg"
+                    alt="Abc Defghij klmnop qrstu vwxyz Abcdefg Hijk lmn Opqrs" loading="eager">
+                </picture>
+              </div>
+            </div>
+            <div class="carousel-captions-wrapper">
+              <div class="carousel-flex-content-hGXIOq active">
+                <h1 data-test-id="homepage-hero-slide-1-header" 
+                  class="headline-styled-fsZndk">Qlq, Ozm & Cqwf po Ztindc Qpoiuasdf</h1>
+                <p data-test-id="homepage-hero-slide-1-subhead"
+                  class="subhead-jeqlYi">Otd dfs pasilavakxjd paofidjdks qgs bwey. Xxxxxxx Aaaa+ is now $6,666 <del>$6,666</del>. Xxxxxxx Bbbbb is now $6,666 <del>$6,666</del>.</p>
+                <div class="flex-button-wrapper-bcSaMr">
+                  <a class="button-cta-1-bLuyKs ds__input" onclick="return false;"
+                    data-test-id="homepage-hero-slide-1-cta-1">Explore Bbbbb</a>
+                  <a class="button-cta-2-hcatEQ ds__input" onclick="return false;"
+                    data-test-id="homepage-hero-slide-1-cta-2">Explore Aaaa+</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
+          <div class="carousel-ImageAndContent-flex-kRowOl">
+            <div class="carousel-image-wrapper-drcWis">
+              <div class="background-image-oyalu" height="100%" width="100%">
+                <picture type="image">
+                  <source srcset="images/carousel-2.jpg" media="(min-width: 1024px)">
+                  <img src="images/carousel-2.jpg"
+                    alt="Two Xxxxxxx members using their Xxxxxxx Aaaaa and Bbbbb" loading="eager">
+                </picture>
+              </div>
+            </div>
+            <div class="carousel-captions-wrapper">
+              <div class="carousel-flex-content-hGXIOq">
+                <h1 data-test-id="homepage-hero-slide-2-header" 
+                  class="headline-styled-fsZndk">Gwer-slkdsf oxkjwje dx dfgg wjx naf</h1>
+                <p data-test-id="homepage-hero-slide-2-subhead"
+                  class="subhead-jeqlYi">Try Xxxxxxx classes free for 66 days. Zzx, dfgg, bnm, or sdftyfd no matter the time or the place with the Xxxxxxx Ddd.</p>
+                <div class="flex-button-wrapper-bcSaMr">
+                  <a class="button-cta-1-bLuyKs ds__input" onclick="return false;"
+                    data-test-id="homepage-hero-slide-2-cta-1">Get 66 days free</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
+          <div class="carousel-ImageAndContent-flex-kRowOl">
+            <div class="carousel-image-wrapper-drcWis">
+              <video src="images/carousel-video-3-compressed.mp4" 
+              preload="none" muted autoplay loop preload="auto" playsinline 
+                class="slide-video-juHCdc"></video>
+            </div>
+            <div class="carousel-captions-wrapper">
+              <div class="carousel-flex-content-hGXIOq">
+                <span data-test-id="homepage-hero-slide-3-eyebrow" 
+                  class="eyebrow-styled-xCLtQ">Byp Ndf Xxxxxxx Wqqsc</span>
+                <h1 data-test-id="homepage-hero-slide-3-header" 
+                  class="headline-styled-fsZndk">I aasdfhg xcv dr adga, adfhj, zfx mdtd</h1>
+                <p data-test-id="homepage-hero-slide-3-subhead"
+                  class="subhead-jeqlYi">Starting at $66/mo, the Xxxxxxx Ggggg will help you dfgjn dzjd cccccccc qrwqwrjg mzmdg.¹</p>
+                <div class="flex-button-wrapper-bcSaMr">
+                  <a class="button-cta-1-bLuyKs ds__input " onclick="return false;"
+                    data-test-id="homepage-hero-slide-3-cta-1">Explore Ggggg</a>
+                </div>
+                <div class="jMCrIK">
+                  <h2 data-test-id="homepage-hero-slide-3-support" class="slide-support-text-gHUoen">
+                    <span data-md="true">Nsf-Werydf Ojfdgodfgg poiuqwnerw*</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
+          <div class="carousel-ImageAndContent-flex-kRowOl">
+            <div class="carousel-image-wrapper-drcWis">
+              <div class="background-image-oyalu" height="100%" width="100%">
+                <picture type="image">
+                  <source srcset="images/carousel-4.jpg" media="(min-width: 1024px)">
+                  <img src="images/carousel-4.jpg"
+                    alt="Two Xxxxxxx members using their Xxxxxxx Aaaa and Bbbbb" loading="eager">
+                </picture>
+              </div>
+            </div>
+            <div class="carousel-captions-wrapper">
+              <div class="carousel-flex-content-hGXIOq">
+                <span data-test-id="homepage-hero-slide-4-eyebrow" 
+                  class="eyebrow-styled-xCLtQ">Xxxxxxx Ddd</span>
+                <h1 data-test-id="homepage-hero-slide-4-header" 
+                  class="headline-styled-fsZndk">Classes for The Gsdgd Wweriudf</h1>
+                <p data-test-id="homepage-hero-slide-4-subhead"
+                  class="subhead-jeqlYi">Try Xxxxxxx's sdfgjdf classes free for 66 days. Pqoq df cvbmn fdghd, zddh fjfg Ddd, and sdf'g wyw aasd bzxqq mbm.*</p>
+                <div class="flex-button-wrapper-bcSaMr">
+                  <a class="button-cta-1-bLuyKs ds__input " onclick="return false;"
+                    data-test-id="homepage-hero-slide-4-cta-1">Get 66 days free</a>
+                  <!--
+                  <a class="button-cta-2-hcatEQ ds__input " href="/"
+                    data-test-id="homepage-hero-slide-2-cta-2">Explore Bbbbb</a>
+                    -->
+                </div>
+                <div class="jMCrIK">
+                  <h2 data-test-id="homepage-hero-slide-3-support" class="slide-support-text-gHUoen">
+                    <span data-md="true">New Ddd Members only. $66.66/mo after trial unless canceled. Cancel anytime before free trial ends. Full terms at www.xxxxxxxxxx.com/Ddd</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- above is wrapper for carousel slide contents-->
+
+      <!-- below is wrapper for carousel controls (indicators, arrows, pause buttons)-->
+      <div class="carousel-indicators slide-buttons-wrapper-wceIy">
+        <button class="slide-button-hdopKD" aria-current="true" aria-label="Slide 1">
+          <span class="slide-button-span-bzeOpQ active"></span>
+        </button>
+        <button class="slide-button-hdopKD" aria-label="Slide 2">
+          <span class="slide-button-span-bzeOpQ"></span>
+        </button>
+        <button class="slide-button-hdopKD" aria-label="Slide 3">
+          <span class="slide-button-span-bzeOpQ"></span>
+        </button>
+        <button class="slide-button-hdopKD" aria-label="Slide 4">
+          <span class="slide-button-span-bzeOpQ"></span>
+        </button>
+      </div>
+
+      <!-- prev button:-->
+      <button class="slide-arrows-ecjkKh slide-arrow-left-cCoBrd" type="button">
+        <svg viewBox="0 0 26 19" role="img" width="70px" style="transform: rotate3d(0, 0, 1, 90deg);">
+          <title>Chevron</title>
+          <path d="M13 12.49l-8-8M21 4.49l-8.35 8.35" style="stroke: white;"></path>
+        </svg>
+      </button>
+
+      <!-- next button:-->
+      <button class="slide-arrows-ecjkKh slide-arrow-right-kiWcOt" type="button">
+        <svg viewBox="0 0 26 19" role="img" width="70px" style="transform: rotate3d(0, 0, 1, -90deg);">
+          <title>Chevron</title>
+          <path d="M13 12.49l-8-8M21 4.49l-8.35 8.35" style="stroke: white;"></path>
+        </svg>
+      </button>
+
+      <button class="pause-button-wrapper-jSWYiy">
+        <svg aria-label="Pause" fill="#ffffff" role="img"
+          viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" class="pause-play-svg-ffHQEO">
+          <g fill-rule="evenodd">
+            <path
+              d="M17 .25C7.75.25.25 7.75.25 17S7.75 33.75 17 33.75 33.75 26.25 33.75 17 26.25.25 17 .25zm0 1.5c8.422 0 15.25 6.828 15.25 15.25S25.422 32.25 17 32.25 1.75 25.422 1.75 17 8.578 1.75 17 1.75z">
+            </path>
+            <g transform="translate(12 11.667)">
+              <rect width="2.667" height="12" rx="1"></rect>
+              <rect width="2.667" height="12" x="6.333" rx="1"></rect>
+            </g>
+          </g>
+        </svg>
+        <!--  
+        <svg aria-label="Play" fill="#ffffff" role="img" viewBox="0 0 34 34"
+          xmlns="http://www.w3.org/2000/svg" class="pause-play-svg-ffHQEO">
+          <g fill-rule="nonzero">
+            <path
+              d="M17 .25C7.75.25.25 7.75.25 17S7.75 33.75 17 33.75 33.75 26.25 33.75 17 26.25.25 17 .25zm0 1.5c8.422 0 15.25 6.828 15.25 15.25S25.422 32.25 17 32.25 1.75 25.422 1.75 17 8.578 1.75 17 1.75z">
+            </path>
+            <path
+              d="M15.436 11.411l6.812 5.476a1 1 0 010 1.559l-6.812 5.476a1 1 0 01-1.627-.78V12.192a1 1 0 011.627-.78z">
+            </path>
+          </g>
+        </svg>
         -->
-        <section class="header carousel-section-mFWXw"
-          id="CarouselZone">
-
-          
-          <div class="carousel-inner-gRjVHm" data-test-id="carousel-container">
-            <div class="active cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
-  
-              <div class="carousel-ImageAndContent-flex-kRowOl">
-                <div class="carousel-image-wrapper-drcWis">
-                  <div class="background-image-oyalu" height="100%" width="100%">
-                    <picture type="image">
-                      <source srcset="images/carousel-1.jpg" media="(min-width: 1024px)">
-                      <img src="images/carousel-1.jpg"
-                        alt="Abc Defghij klmnop qrstu vwxyz Abcdefg Hijk lmn Opqrs" loading="eager">
-                    </picture>
-                  </div>
-                </div>
-  
-                <div class="carousel-captions-wrapper">
-                  <div class="carousel-flex-content-hGXIOq active">
-                    <h1 data-test-id="homepage-hero-slide-1-header" 
-                      class="headline-styled-fsZndk">Qlq, Ozm & Cqwf po Ztindc Qpoiuasdf</h1>
-                    <p data-test-id="homepage-hero-slide-1-subhead"
-                      class="subhead-jeqlYi">Otd dfs pasilavakxjd paofidjdks qgs bwey. Xxxxxxx Aaaa+ is now $6,666 <del>$6,666</del>. Xxxxxxx Bbbbb is now $6,666 <del>$6,666</del>.</p>
-                    <div class="flex-button-wrapper-bcSaMr">
-                      <a class="button-cta-1-bLuyKs ds__input" onclick="return false;"
-                        data-test-id="homepage-hero-slide-1-cta-1">Explore Bbbbb</a>
-                      <a class="button-cta-2-hcatEQ ds__input" onclick="return false;"
-                        data-test-id="homepage-hero-slide-1-cta-2">Explore Aaaa+</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-  
-            <div class="cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
-  
-              <div class="carousel-ImageAndContent-flex-kRowOl">
-                <div class="carousel-image-wrapper-drcWis">
-                  <div class="background-image-oyalu" height="100%" width="100%">
-                    <picture type="image">
-                      <source srcset="images/carousel-2.jpg" media="(min-width: 1024px)">
-                      <img src="images/carousel-2.jpg"
-                        alt="Two Xxxxxxx members using their Xxxxxxx Aaaaa and Bbbbb" loading="eager">
-                    </picture>
-                  </div>
-                </div>
-  
-                <div class="carousel-captions-wrapper">
-                  <div class="carousel-flex-content-hGXIOq">
-                    <h1 data-test-id="homepage-hero-slide-2-header" 
-                      class="headline-styled-fsZndk">Gwer-slkdsf oxkjwje dx dfgg wjx naf</h1>
-                    <p data-test-id="homepage-hero-slide-2-subhead"
-                      class="subhead-jeqlYi">Try Xxxxxxx classes free for 66 days. Zzx, dfgg, bnm, or sdftyfd no matter the time or the place with the Xxxxxxx Ddd.</p>
-                    <div class="flex-button-wrapper-bcSaMr">
-                      <a class="button-cta-1-bLuyKs ds__input" onclick="return false;"
-                        data-test-id="homepage-hero-slide-2-cta-1">Get 66 days free</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-  
-            <div class="cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
-              <div class="carousel-ImageAndContent-flex-kRowOl">
-                <div class="carousel-image-wrapper-drcWis">
-                  <video src="images/carousel-video-3-compressed.mp4" 
-                  preload="none" muted autoplay loop preload="auto" playsinline 
-                    class="slide-video-juHCdc"></video>
-                </div>
-  
-                <div class="carousel-captions-wrapper">
-                  <div class="carousel-flex-content-hGXIOq">
-                    <span data-test-id="homepage-hero-slide-3-eyebrow" 
-                      class="eyebrow-styled-xCLtQ">Byp Ndf Xxxxxxx Wqqsc</span>
-                    <h1 data-test-id="homepage-hero-slide-3-header" 
-                      class="headline-styled-fsZndk">I aasdfhg xcv dr adga, adfhj, zfx mdtd</h1>
-                    <p data-test-id="homepage-hero-slide-3-subhead"
-                      class="subhead-jeqlYi">Starting at $66/mo, the Xxxxxxx Ggggg will help you dfgjn dzjd cccccccc qrwqwrjg mzmdg.¹</p>
-                    <div class="flex-button-wrapper-bcSaMr">
-                      <a class="button-cta-1-bLuyKs ds__input " onclick="return false;"
-                        data-test-id="homepage-hero-slide-3-cta-1">Explore Ggggg</a>
-                    </div>
-  
-                    <div class="jMCrIK">
-                      <h2 data-test-id="homepage-hero-slide-3-support" class="slide-support-text-gHUoen">
-                        <span data-md="true">Nsf-Werydf Ojfdgodfgg poiuqwnerw*</span>
-                      </h2>
-                    </div>
-  
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-  
-            <div class="cmsHeroContainer-gUIdhS" data-test-id="cmsHeroContainer">
-  
-              <div class="carousel-ImageAndContent-flex-kRowOl">
-                <div class="carousel-image-wrapper-drcWis">
-                  <div class="background-image-oyalu" height="100%" width="100%">
-                    <picture type="image">
-                      <source srcset="images/carousel-4.jpg" media="(min-width: 1024px)">
-                      <img src="images/carousel-4.jpg"
-                        alt="Two Xxxxxxx members using their Xxxxxxx Aaaa and Bbbbb" loading="eager">
-                    </picture>
-                  </div>
-                </div>
-  
-                <div class="carousel-captions-wrapper">
-                  <div class="carousel-flex-content-hGXIOq">
-                    <span data-test-id="homepage-hero-slide-4-eyebrow" 
-                      class="eyebrow-styled-xCLtQ">Xxxxxxx Ddd</span>
-                    <h1 data-test-id="homepage-hero-slide-4-header" 
-                      class="headline-styled-fsZndk">Classes for The Gsdgd Wweriudf</h1>
-                    <p data-test-id="homepage-hero-slide-4-subhead"
-                      class="subhead-jeqlYi">Try Xxxxxxx's sdfgjdf classes free for 66 days. Pqoq df cvbmn fdghd, zddh fjfg Ddd, and sdf'g wyw aasd bzxqq mbm.*</p>
-                    <div class="flex-button-wrapper-bcSaMr">
-                      <a class="button-cta-1-bLuyKs ds__input " onclick="return false;"
-                        data-test-id="homepage-hero-slide-4-cta-1">Get 66 days free</a>
-                      <!--
-                      <a class="button-cta-2-hcatEQ ds__input " href="/"
-                        data-test-id="homepage-hero-slide-2-cta-2">Explore Bbbbb</a>
-                        -->
-                    </div>
-  
-                    <div class="jMCrIK">
-                      <h2 data-test-id="homepage-hero-slide-3-support" class="slide-support-text-gHUoen">
-                        <span data-md="true">New Ddd Members only. $66.66/mo after trial unless canceled. Cancel anytime before free trial ends. Full terms at www.xxxxxxxxxx.com/Ddd</span>
-                      </h2>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-          </div>
-
-          <!-- above is wrapper for carousel slide contents-->
-          <!-- below is wrapper for carousel controls (indicators, arrows, pause buttons)-->
-    
-          <div class="carousel-indicators slide-buttons-wrapper-wceIy">
-            <button class="slide-button-hdopKD" aria-current="true" aria-label="Slide 1">
-              <span class="slide-button-span-bzeOpQ active"></span>
-            </button>
-            <button class="slide-button-hdopKD" aria-label="Slide 2">
-              <span class="slide-button-span-bzeOpQ"></span>
-            </button>
-            <button class="slide-button-hdopKD" aria-label="Slide 3">
-              <span class="slide-button-span-bzeOpQ"></span>
-            </button>
-            <button class="slide-button-hdopKD" aria-label="Slide 4">
-              <span class="slide-button-span-bzeOpQ"></span>
-            </button>
-          </div>
-    
-          <!-- prev button:-->
-    
-          <button class="slide-arrows-ecjkKh slide-arrow-left-cCoBrd" type="button">
-            <svg viewBox="0 0 26 19" role="img" width="70px" style="transform: rotate3d(0, 0, 1, 90deg);">
-              <title>Chevron</title>
-              <path d="M13 12.49l-8-8M21 4.49l-8.35 8.35" style="stroke: white;"></path>
-            </svg>
-          </button>
-
-          <!-- next button:-->
-
-          <button class="slide-arrows-ecjkKh slide-arrow-right-kiWcOt" type="button">
-            <svg viewBox="0 0 26 19" role="img" width="70px" style="transform: rotate3d(0, 0, 1, -90deg);">
-              <title>Chevron</title>
-              <path d="M13 12.49l-8-8M21 4.49l-8.35 8.35" style="stroke: white;"></path>
-            </svg>
-          </button>
-
-          <button class="pause-button-wrapper-jSWYiy">
-            <svg aria-label="Pause" fill="#ffffff" role="img"
-              viewBox="0 0 34 34" xmlns="http://www.w3.org/2000/svg" class="pause-play-svg-ffHQEO">
-              <g fill-rule="evenodd">
-                <path
-                  d="M17 .25C7.75.25.25 7.75.25 17S7.75 33.75 17 33.75 33.75 26.25 33.75 17 26.25.25 17 .25zm0 1.5c8.422 0 15.25 6.828 15.25 15.25S25.422 32.25 17 32.25 1.75 25.422 1.75 17 8.578 1.75 17 1.75z">
-                </path>
-                <g transform="translate(12 11.667)">
-                  <rect width="2.667" height="12" rx="1"></rect>
-                  <rect width="2.667" height="12" x="6.333" rx="1"></rect>
-                </g>
-              </g>
-            </svg>
-            <!--  
-            <svg aria-label="Play" fill="#ffffff" role="img" viewBox="0 0 34 34"
-              xmlns="http://www.w3.org/2000/svg" class="pause-play-svg-ffHQEO">
-              <g fill-rule="nonzero">
-                <path
-                  d="M17 .25C7.75.25.25 7.75.25 17S7.75 33.75 17 33.75 33.75 26.25 33.75 17 26.25.25 17 .25zm0 1.5c8.422 0 15.25 6.828 15.25 15.25S25.422 32.25 17 32.25 1.75 25.422 1.75 17 8.578 1.75 17 1.75z">
-                </path>
-                <path
-                  d="M15.436 11.411l6.812 5.476a1 1 0 010 1.559l-6.812 5.476a1 1 0 01-1.627-.78V12.192a1 1 0 011.627-.78z">
-                </path>
-              </g>
-            </svg>
-            -->
-          </button>
-        </section>
+      </button>
+    </section>
           
     <!-- prequalify section -->
     <div class="anti-flash-white-background">
@@ -924,15 +886,13 @@
       </ul>
     </nav>
 
-
-
-    <div class="Container__StyledContainer-design-system__sc-1l0wzxx-0 oaa-dd sc-7bcb59ce-2 jtLiUx">
-      <div class="Container__StyledContainer-design-system__sc-1l0wzxx-0 bzzjED sc-7bcb59ce-3 dnaPaK">
+    <div class="styled-container-anti-flash get-started-wrapper">
+      <div class="styled-container-almost-white get-started-wrapper-2">
         <span data-md="true">Interested in trying Xxxxxxx for yourself?</span>
         <a aria-label="Sdf Sdfsfds"
-          class="styled-link-contains-span ds__link sc-7bcb59ce-4 djgEzR"
+          class="styled-link-contains-span ds__link get-started"
           href="#" onclick="return false;">
-          <span class="styled-display">Sdf Sdfsfds 
+          <span class="styled-display">Sdf Sdfsfds
           </span>
         </a>
       </div>
@@ -949,21 +909,734 @@
 
 
 
-  </div><!-- root closes-->
-</main>
-</div>
 
-  <div>
-    <h1>Lorem Ipsum</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi nulla, accumsan ac metus eget, laoreet bibendum mi. Ut a varius purus. Phasellus dapibus egestas risus, vitae tempus urna condimentum ut. Morbi neque tortor, facilisis sit amet semper bibendum, feugiat ac elit. Aenean efficitur auctor nisi, rhoncus ornare nisi cursus sit amet. Pellentesque sed massa est. Ut nec diam condimentum, rutrum leo nec, imperdiet odio. Aenean tempor est magna, eget sagittis neque hendrerit et.</p>
-      <p>Etiam id sodales sem, in sollicitudin dolor. Sed nec massa quis arcu molestie aliquet nec a metus. Nulla sem nunc, maximus at sollicitudin quis, consequat a lorem. Cras ut mauris ut lacus eleifend malesuada. Pellentesque nec libero non diam feugiat volutpat id porttitor ante. Etiam tincidunt placerat velit. Maecenas nec pretium ante, sed egestas nibh.</p>
-      <p>Curabitur tellus velit, consequat eu lobortis ultrices, consequat congue odio. Maecenas mi justo, euismod quis ex id, condimentum pretium orci. Praesent a metus sagittis, posuere elit id, cursus nisl. Duis sodales sollicitudin lectus, vel tincidunt libero vehicula eget. Morbi fringilla hendrerit tristique. Mauris rhoncus sit amet diam ut molestie. Vivamus elementum nulla non dolor ultrices, in faucibus mauris maximus. Vestibulum vestibulum eu tellus et pellentesque. Nullam quis finibus dolor, sed pellentesque velit. Maecenas magna ex, suscipit placerat mi ut, eleifend ornare nulla. Nam pellentesque tincidunt consequat. Sed malesuada, lacus nec consequat dictum, risus magna tincidunt libero, sed lacinia arcu sem sit amet sem. Aliquam at pulvinar metus, vulputate ornare metus. Nullam pellentesque lectus lorem, a mollis arcu ullamcorper non. Donec sagittis risus lobortis lacus posuere, at ornare elit congue.</p>
-      <p>Fusce nec ligula dui. Nullam at nibh a augue viverra dignissim. Mauris id dictum velit, pulvinar tincidunt neque. Donec mauris lectus, ornare at rhoncus ut, feugiat a nisl. Morbi vehicula felis risus, at tempor elit viverra pretium. Pellentesque placerat odio purus, ut vestibulum nibh auctor id. Sed et dolor sit amet massa consequat ornare. Mauris sagittis efficitur lobortis.</p>
-      <p>Phasellus rutrum scelerisque condimentum. Curabitur sed rutrum ipsum. Mauris volutpat felis eget sem interdum, in placerat libero viverra. Ut iaculis ante nec efficitur dignissim. Nulla lobortis viverra justo, sed bibendum sem iaculis vitae. Curabitur tempus mattis enim, porttitor semper nisl consequat non. Duis lobortis congue cursus. Nam ac vulputate eros, quis vulputate magna. Duis tempus massa quis imperdiet dictum. Maecenas non pulvinar dui. Integer dolor tortor, sollicitudin id tempus et, egestas nec felis. Proin pretium sit amet mauris sed ultricies. Vivamus auctor augue metus, quis vehicula mi molestie id. Fusce eu ipsum velit. Duis dictum diam in dui sagittis aliquet. Vestibulum semper non nulla sit amet pulvinar.</p>
+
+
+    <!-- recommended for you section -->
+    <div class="padding-top-bottom">
+      <h2 class="styled-headline-h2 text-align-center">Recommended for you
+      </h2>
+      <div class="rfy-wrapper">
+        <button disabled aria-hidden="false" aria-label="Previous"
+          data-test-id="pagination-arrow-prev" class="pagination-arrow-disabled right-100pct">
+          <svg height="40"
+            viewBox="0 0 40 40" fill="none" aria-labelledby="cl67c6n190011376sxiqhl0pg"
+            class="overflow-visibile-kbbWQF" focusable="false"
+            preserveAspectRatio="xMidYMid meet">
+            <title id="cl67c6n190011376sxiqhl0pg">Arrow</title>
+            <circle cx="20" cy="20" r="20" stroke="currentColor" stroke-width="2"></circle>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="m22.292 29.706 1.416-1.412-8.295-8.316 8.252-8.272-1.416-1.412-9.661 9.684 9.704 9.728Z"
+              fill="currentColor"></path>
+          </svg>
+        </button>
+        <div class="rfy-content-wrapper">
+          <div class="slick-slider width-100pct slick-initialized" dir="ltr">
+            <ul class="controls">
+              <li></li>
+              <li></li>
+            </ul>
+            <div class="slick-list">
+              <ul class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px); width: 5000px;">
+                <li role="tabpanel" aria-label="Slide-1" id="-0" data-index="0"
+                  class="slick-slide" tabindex="-1" aria-hidden="false"
+                  style="outline: none;">
+                  <div>
+                    <div tabindex="-1"
+                      class="rfy-slide-padding-wrapper"
+                      style="width: 100%; display: inline-block;">
+                      <div data-test-id="product-tile" class="product-tile">
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <div class="media-container" height="240px" width="100%">
+                              <picture type="image">
+                                <img
+                                  src="images/rfy/rfy-1.png"
+                                  alt="Peloton Bike+" loading="lazy">
+                                </picture>
+                            </div>
+                          </span>
+                        </a>
+                        <div class="rfy-medal-wrapper">
+                          <span
+                            class="styled-support-font">
+                            <div class="media-container-tinyimg rfy-tinyimg-wrapper"
+                              height="16px" width="max-content">
+                              <picture type="image">
+                                <img src="images/rfy/popular.png" alt="popular" loading="lazy">
+                              </picture>
+                            </div>
+                            Best seller
+                          </span>
+                        </div>
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display-text"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <h3 class="styled-label-h3">Peloton Bike+</h3>
+                          </span>
+                        </a>
+                        <span>
+                          <span class="styled-support-price">
+                            $1,995
+                          </span>
+                          <span
+                            class="styled-support-font margin-left-8px">
+                            Includes free delivery and setup*
+                          </span>
+                        </span>
+                        <!-- todo: quick add, then isLoading, disabled, then added to cart -->
+                        <button type="button"
+                          class="quick-add-button ds__input"
+                          aria-label="Quick Add Peloton Bike+" data-test-id="top-level-quick-add">
+                          Quick Add
+                        </button>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li role="tabpanel" aria-label="Slide-2" id="-1" data-index="1" class="slick-slide"
+                  tabindex="-1" aria-hidden="false" style="outline: none;">
+                  <div>
+                    <div tabindex="-1"
+                      class="rfy-slide-padding-wrapper"
+                      style="width: 100%; display: inline-block;">
+                      <div data-test-id="product-tile" class="product-tile">
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <div class="media-container" height="240px" width="100%">
+                              <picture type="image">
+                                <img
+                                  src="images/rfy/rfy-2.png"
+                                  alt="Altos Cycling Shoes" loading="lazy">
+                              </picture>
+                            </div>
+                          </span>
+                        </a>
+                        <div class="rfy-medal-wrapper">
+                          <span class="styled-support-font">
+                            <div class="media-container-tinyimg rfy-tinyimg-wrapper"
+                              height="16px" width="max-content">
+                              <picture type="image">
+                                <img src="images/rfy/youneedthis.png" alt="popular" loading="lazy">
+                              </picture>
+                            </div>
+                            New
+                          </span>
+                        </div>
+                        <a 
+                          class="styled-link-contains-span ds__link product-tile-display-text"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <h3 class="styled-label-h3">Altos Cycling Shoes</h3>
+                          </span>
+                        </a>
+                        <span>
+                          <span class="styled-support-price">$145</span>
+                        </span>
+                        <button
+                          type="button" class="quick-add-button ds__input"
+                          aria-label="Quick Add Altos Cycling Shoes" data-test-id="top-level-quick-add">
+                          Quick Add
+                        </button>
+                        <div
+                          data-test-id="config-product-popup"
+                          aria-expanded="false"
+                          class="config-product-popup">
+                          <button aria-label="Close" class="flex-1-1-0-bg-none"></button>
+                          <div data-test-id="slide-out-container" class="slide-out-container">
+                            <div class="margin-top-gradient"></div>
+                            <div class="pop-content-wrapper">
+                              <button data-test-id="configure-popup-close"
+                                class="configure-popup-close">
+                                <svg height="16" viewBox="0 0 32 32" fill="none"
+                                  aria-labelledby="cl67c6n9b0015376skeg2bkx3"
+                                  class="overflow-visibile-kbbWQF" focusable="false"
+                                  preserveAspectRatio="xMidYMid meet">
+                                  <title id="cl67c6n9b0015376skeg2bkx3">Close</title>
+                                  <path d="m6 5 21.213 21.213M27.213 5 6 26.213" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round"></path>
+                                </svg>
+                              </button>
+                              <div>
+                                <h3 class="styled-label-h3">Altos Cycling Shoes
+                                </h3>
+                                <span data-test-id="configure-product-price"
+                                  class="configure-product-price">$145</span>
+                                <form>
+                                  <div class="margin-bottom-1rem">
+                                    <div>
+                                      <div class="cursor-pointer-position-relative">
+                                        <label for="cl67c6n0v000y376scsfduurz"
+                                          class="product-label">
+                                          Shoe Size*
+                                        </label>
+                                        <select
+                                          data-test-id="configure-product-size" data-has-error="false"
+                                          class="configure-product-size" id="cl67c6n0v000y376scsfduurz"
+                                          aria-label="Shoe Size" aria-required="true" data-user-focused="false"
+                                          data-value="" required=""
+                                          >
+                                          <option value=""></option>
+                                          <option value="women-5">Women 5</option>
+                                          <option value="women-5-5">Women 5.5</option>
+                                          <option value="women-6">Women 6</option>
+                                          <option value="women-6-5">Women 6.5</option>
+                                          <option value="women-7">Women 7</option>
+                                          <option value="women-7-5-men-6">Women 7.5 / Men 6</option>
+                                          <option value="women-8-men-6-5">Women 8 / Men 6.5</option>
+                                          <option value="women-8-5-men-7">Women 8.5 / Men 7</option>
+                                          <option value="women-9-men-7-5">Women 9 / Men 7.5</option>
+                                          <option value="women-9-5-men-8">Women 9.5 / Men 8</option>
+                                          <option value="women-10-men-8-5">Women 10 / Men 8.5</option>
+                                          <option value="women-10-5-men-9">Women 10.5 / Men 9</option>
+                                          <option value="women-11-men-9-5">Women 11 / Men 9.5</option>
+                                          <option value="women-11-5-men-10">Women 11.5 / Men 10</option>
+                                          <option value="women-12-men-10-5">Women 12 / Men 10.5</option>
+                                          <option value="men-11">Men 11</option>
+                                          <option value="men-11-5">Men 11.5</option>
+                                          <option value="men-12">Men 12</option>
+                                          <option value="men-12-5">Men 12.5</option>
+                                          <option value="men-13">Men 13</option>
+                                          <option value="men-14">Men 14</option>
+                                          <option value="men-15">Men 15</option>
+                                        </select>
+                                        <div class="select-icon">
+                                          <svg viewBox="0 0 12 7" role="presentation"
+                                            width="12px" height="7px" style="transform: rotate3d(0, 0, 1, 0deg);">
+                                            <title>chevron</title>
+                                            <path
+                                              d="M5.981 4.92l-4.7-4.7A.75.75 0 0 0 .22 1.28l5.163 5.163a.748.748 0 0 0           .598.217.748.748 0 0 0 .6-.217l5.162-5.163a.75.75 0 0 0-1.06-1.06L5.98 4.92z">
+                                            </path>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <button type="submit"
+                                    class="popup-quick-add-button ds__input"
+                                    data-test-id="configure-product-submit"
+                                    href="#" onclick="return false;">
+                                    Quick Add
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li role="tabpanel" aria-label="Slide-3" id="-2" data-index="2" class="slick-slide"
+                  tabindex="-1" aria-hidden="false" style="outline: none;">
+                  <div>
+                    <div tabindex="-1"
+                      class="rfy-slide-padding-wrapper"
+                      style="width: 100%; display: inline-block;">
+                        <div data-test-id="product-tile" class="product-tile">
+                          <a
+                          class="styled-link-contains-span ds__link product-tile-display"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <div class="media-container" height="240px" width="100%">
+                              <picture type="image">
+                                <img
+                                  src="images/rfy/rfy-3.png" alt="Bike Mat"
+                                  loading="lazy"></picture>
+                            </div>
+                          </span>
+                        </a>
+                        <div class="rfy-medal-wrapper">
+                          <span
+                            class="styled-support-font">
+                            <div class="media-container-tinyimg rfy-tinyimg-wrapper"
+                              height="16px" width="max-content">
+                              <picture type="image">
+                                <img src="images/rfy/goodidea.png" alt="popular" loading="lazy">
+                              </picture>
+                            </div>
+                            Fits under Peloton Bikes
+                          </span>
+                        </div>
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display-text"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <h3 class="styled-label-h3">Bike Mat</h3>
+                          </span>
+                        </a>
+                        <span>
+                          <span class="styled-support-price">$75</span>
+                        </span>
+                        <button
+                          type="button" class="quick-add-button ds__input"
+                          aria-label="Quick Add Bike Mat" data-test-id="top-level-quick-add">Quick Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li role="tabpanel" aria-label="Slide-4" id="-3" data-index="3" class="slick-slide"
+                  tabindex="-1" aria-hidden="false" style="outline: none;">
+                  <div>
+                    <div tabindex="-1"
+                      class="rfy-slide-padding-wrapper"
+                      style="width: 100%; display: inline-block;">
+                      <div data-test-id="product-tile" class="product-tile">
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <div class="media-container" height="240px" width="100%">
+                              <picture type="image">
+                                <img
+                                  src="images/rfy/rfy-4.png"
+                                  alt="Heart Rate Band" loading="lazy">
+                                </picture>
+                            </div>
+                          </span>
+                        </a>
+                        <div class="rfy-medal-wrapper">
+                          <span
+                            class="styled-support-font">
+                            <div class="media-container-tinyimg rfy-tinyimg-wrapper"
+                              height="16px" width="max-content">
+                              <picture type="image">
+                                <img src="images/rfy/youneedthis.png" alt="popular" loading="lazy">
+                              </picture>
+                            </div>
+                            New
+                          </span>
+                        </div>
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display-text"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <h3 class="styled-label-h3">Heart Rate Band</h3>
+                          </span>
+                        </a>
+                        <span>
+                          <span
+                            class="styled-support-price">$90
+                          </span>
+                        </span>
+                        <button
+                          type="button" class="quick-add-button ds__input"
+                          aria-label="Quick Add Heart Rate Band" data-test-id="top-level-quick-add">Quick Add</button>
+                        <div
+                          data-test-id="config-product-popup"
+                          aria-expanded="false"
+                          class="config-product-popup">
+                          <button aria-label="Close" class="flex-1-1-0-bg-none"></button>
+                          <div data-test-id="slide-out-container" class="slide-out-container">
+                            <div class="margin-top-gradient"></div>
+                            <div class="pop-content-wrapper">
+                              <button data-test-id="configure-popup-close"
+                                class="configure-popup-close">
+                                <svg height="16" viewBox="0 0 32 32" fill="none"
+                                  aria-labelledby="cl67c6n9d0016376snnc8ndmm"
+                                  class="overflow-visibile-kbbWQF" focusable="false"
+                                  preserveAspectRatio="xMidYMid meet">
+                                  <title id="cl67c6n9d0016376snnc8ndmm">Close</title>
+                                  <path d="m6 5 21.213 21.213M27.213 5 6 26.213" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round"></path>
+                                </svg>
+                              </button>
+                              <div>
+                                <h3 class="styled-label-h3">Heart Rate Band</h3>
+                                <span data-test-id="configure-product-price"
+                                  class="configure-product-price">$90</span>
+                                <form>
+                                  <div class="margin-bottom-1rem">
+                                    <div>
+                                      <div class="cursor-pointer-position-relative">
+                                        <label for="cl67c6n0y000z376skvf82a7c"
+                                          class="product-label">
+                                          Armband Size*
+                                        </label>
+                                        <select
+                                          data-test-id="configure-product-armband-size" data-has-error="false"
+                                          class="configure-product-size" id="cl67c6n0y000z376skvf82a7c"
+                                          aria-label="Armband Size" aria-required="true" data-user-focused="false"
+                                          data-value="" required="">
+                                          <option value=""></option>
+                                          <option value="armband-small">Small</option>
+                                          <option value="armband-large">Large</option>
+                                        </select>
+                                        <div class="select-icon">
+                                          <svg viewBox="0 0 12 7" role="presentation"
+                                            width="12px" height="7px" style="transform: rotate3d(0, 0, 1, 0deg);">
+                                            <title>chevron</title>
+                                            <path
+                                              d="M5.981 4.92l-4.7-4.7A.75.75 0 0 0 .22 1.28l5.163 5.163a.748.748 0 0 0           .598.217.748.748 0 0 0 .6-.217l5.162-5.163a.75.75 0 0 0-1.06-1.06L5.98 4.92z">
+                                            </path>
+                                          </svg>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <button type="submit"
+                                    class="popup-quick-add-button ds__input "
+                                    data-test-id="configure-product-submit"
+                                    href="#" onclick="return false;">
+                                    Quick Add
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li role="tabpanel" aria-label="Slide-5" id="-4" data-index="4" class="slick-slide"
+                  tabindex="-1" aria-hidden="false" style="outline: none;">
+                  <div>
+                    <div tabindex="-1"
+                      class="rfy-slide-padding-wrapper"
+                      style="width: 100%; display: inline-block;">
+                      <div data-test-id="product-tile" class="product-tile">
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <div class="media-container" height="240px" width="100%">
+                              <picture type="image">
+                                <img
+                                  src="images/rfy/rfy-5.png"
+                                  alt="Reversible Workout Mat" loading="lazy">
+                                </picture>
+                            </div>
+                          </span>
+                        </a>
+                        <div class="rfy-medal-wrapper"></div>
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display-text"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <h3 class="styled-label-h3">Reversible Workout Mat
+                            </h3>
+                          </span>
+                        </a>
+                        <span>
+                          <span class="styled-support-price">$70</span>
+                        </span>
+                        <button
+                          type="button" class="quick-add-button ds__input"
+                          aria-label="Quick Add Reversible Workout Mat" data-test-id="top-level-quick-add">Quick
+                          Add
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li role="tabpanel" aria-label="Slide-6" id="-5" data-index="5" class="slick-slide"
+                  tabindex="-1" aria-hidden="false" style="outline: none;">
+                  <div>
+                    <div tabindex="-1"
+                      class="rfy-slide-padding-wrapper"
+                      style="width: 100%; display: inline-block;">
+                      <div data-test-id="product-tile" class="product-tile">
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <div class="media-container" height="240px" width="100%">
+                              <picture type="image">
+                                <img
+                                  src="images/rfy/rfy-6.png"
+                                  alt="Resistance Bands" loading="lazy">
+                              </picture>
+                            </div>
+                          </span>
+                        </a>
+                        <div class="rfy-medal-wrapper"></div>
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display-text"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <h3 class="styled-label-h3">Resistance Bands</h3>
+                          </span>
+                        </a>
+                        <span>
+                          <span class="styled-support-price">$70</span>
+                        </span>
+                        <button type="button" class="quick-add-button ds__input"
+                          aria-label="Quick Add Resistance Bands" data-test-id="top-level-quick-add">
+                          Quick Add
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li role="tabpanel" aria-label="Slide-7" id="-6" data-index="6" class="slick-slide"
+                  tabindex="-1" aria-hidden="false" style="outline: none;">
+                  <div>
+                    <div tabindex="-1"
+                      class="rfy-slide-padding-wrapper"
+                      style="width: 100%; display: inline-block;">
+                      <div data-test-id="product-tile" class="product-tile">
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <div class="media-container" height="240px" width="100%">
+                              <picture type="image">
+                                <img
+                                  src="images/rfy/rfy-7.png"
+                                  alt="Glass Water Bottle" loading="lazy">
+                              </picture>
+                            </div>
+                          </span></a>
+                        <div class="rfy-medal-wrapper"></div>
+                        <a class="styled-link-contains-span ds__link product-tile-display-text"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <h3 class="styled-label-h3">Glass Water Bottle</h3>
+                          </span>
+                        </a>
+                        <span>
+                          <span class="styled-support-price">$17</span>
+                        </span>
+                        <button
+                          type="button" class="quick-add-button ds__input"
+                          aria-label="Quick Add Glass Water Bottle" data-test-id="top-level-quick-add">Quick
+                          Add
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li role="tabpanel" aria-label="Slide-8" id="-7" data-index="7" class="slick-slide"
+                  tabindex="-1" aria-hidden="false" style="outline: none;">
+                  <div>
+                    <div tabindex="-1"
+                      class="rfy-slide-padding-wrapper"
+                      style="width: 100%; display: inline-block;">
+                      <div data-test-id="product-tile" class="product-tile">
+                        <a
+                          class="styled-link-contains-span ds__link product-tile-display"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <div class="media-container" height="240px" width="100%">
+                              <picture type="image">
+                                <img
+                                  src="images/rfy/rfy-8.png"
+                                  alt="Light Weights" loading="lazy">
+                                </picture>
+                            </div>
+                          </span></a>
+                        <div class="rfy-medal-wrapper">
+                          <span
+                            class="styled-support-font">
+                            <div class="media-container-tinyimg rfy-tinyimg-wrapper"
+                              height="16px" width="max-content">
+                              <picture type="image">
+                                <img src="images/rfy/goodidea.png" alt="popular" loading="lazy">
+                              </picture>
+                            </div>
+                            Fits in Peloton Bike rack
+                          </span>
+                        </div>
+                        <a class="styled-link-contains-span ds__link product-tile-display-text"
+                          href="#" onclick="return false;">
+                          <span class="styled-display">
+                            <h3 class="styled-label-h3">Light Weights</h3>
+                          </span>
+                        </a>
+                        <span>
+                          <span class="styled-support-price">$25</span>
+                        </span>
+                        <button type="button" class="quick-add-button ds__input"
+                          aria-label="Quick Add Light Weights" data-test-id="top-level-quick-add">
+                          Quick Add
+                        </button>
+                        <div data-test-id="config-product-popup" aria-expanded="false" class="config-product-popup">
+                          <button aria-label="Close" class="flex-1-1-0-bg-none"></button>
+                          <div data-test-id="slide-out-container" class="slide-out-container">
+                            <div class="margin-top-gradient"></div>
+                            <div class="pop-content-wrapper">
+                              <button data-test-id="configure-popup-close"
+                                class="configure-popup-close">
+                                <svg height="16" viewBox="0 0 32 32" fill="none"
+                                  aria-labelledby="cl67c6n9e0017376shmvt17i2"
+                                  class="overflow-visibile-kbbWQF" focusable="false"
+                                  preserveAspectRatio="xMidYMid meet">
+                                  <title id="cl67c6n9e0017376shmvt17i2">Close</title>
+                                  <path d="m6 5 21.213 21.213M27.213 5 6 26.213" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round"></path>
+                                </svg>
+                              </button>
+                              <div>
+                                <h3 class="styled-label-h3">Light Weights</h3>
+                                <span data-test-id="configure-product-price"
+                                  class="configure-product-price">$25</span>
+                                <form>
+                                  <div class="margin-bottom-1rem">
+                                    <div>
+                                      <div class="cursor-pointer-position-relative">
+                                        <label for="cl67c6n130010376srziaj1f8"
+                                          class="product-label">
+                                          Light Weight*
+                                        </label>
+                                        <select
+                                          data-test-id="configure-product-peloton-weights" data-has-error="false"
+                                          class="configure-product-size" id="cl67c6n130010376srziaj1f8"
+                                          aria-label="Light Weight" aria-required="true" data-user-focused="false"
+                                          data-value="" required="">
+                                          <option value=""></option>
+                                          <option value="1lb-weights">1 lb</option>
+                                          <option value="2lb-weights">2 lb</option>
+                                          <option value="3lb-weights">3 lb</option>
+                                        </select>
+                                        <div class="select-icon">
+                                          <svg viewBox="0 0 12 7" role="presentation"
+                                            width="12px" height="7px" style="transform: rotate3d(0, 0, 1, 0deg);">
+                                            <title>chevron</title>
+                                            <path
+                                              d="M5.981 4.92l-4.7-4.7A.75.75 0 0 0 .22 1.28l5.163 5.163a.748.748 0 0 0           .598.217.748.748 0 0 0 .6-.217l5.162-5.163a.75.75 0 0 0-1.06-1.06L5.98 4.92z">
+                                            </path>
+                                          </svg></div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <button type="submit"
+                                    class="popup-quick-add-button ds__input"
+                                    data-test-id="configure-product-submit"
+                                    href="#" onclick="return false;">
+                                    Quick Add
+                                  </button>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="slick-bottom">
+              <ul aria-hidden="true" class="slick-dots" id="ul-slick-dots-2">
+                <li role="tab" aria-labelledby="-0 -1 -2 -3" aria-controls="-0 -1 -2 -3" aria-selected="true"
+                  class="slick-active">
+                  <button aria-labelledby="-0 -1 -2 -3" class="slick-dot-button"></button>
+                </li>
+                <li role="tab" aria-labelledby="-4 -5 -6 -7" aria-controls="-4 -5 -6 -7" aria-selected="false" class="">
+                  <button aria-labelledby="-4 -5 -6 -7" class="slick-dot-button"></button>
+                </li>
+
+                <!--
+                <li role="tab" aria-labelledby="-0 -1" aria-controls="-0 -1" aria-selected="false" class="slick-active">
+                  <button aria-labelledby="-0 -1" class="slick-dot-button"></button>
+                </li>
+                <li role="tab" aria-labelledby="-2 -3" aria-controls="-2 -3" aria-selected="true" class="">
+                  <button aria-labelledby="-2 -3" class="slick-dot-button"></button>
+                </li>
+                <li role="tab" aria-labelledby="-4 -5" aria-controls="-4 -5" aria-selected="false" class="">
+                  <button aria-labelledby="-4 -5" class="slick-dot-button"></button>
+                </li>
+                <li role="tab" aria-labelledby="-6 -7" aria-controls="-6 -7" aria-selected="false" class="">
+                  <button aria-labelledby="-6 -7" class="slick-dot-button"></button>
+                </li>
+                 -->
+              </ul>
+              
+              <ul aria-hidden="true" class="slick-dots" id="ul-slick-dots-8">
+                <li role="tab" aria-labelledby="-0" aria-controls="-0" aria-selected="true" class="slick-active"><button
+                    aria-labelledby="-0" class="slick-dot-button"></button></li>
+                <li role="tab" aria-labelledby="-1" aria-controls="-1" aria-selected="false" class=""><button
+                    aria-labelledby="-1" class="slick-dot-button"></button></li>
+                <li role="tab" aria-labelledby="-2" aria-controls="-2" aria-selected="false" class=""><button
+                    aria-labelledby="-2" class="slick-dot-button"></button></li>
+                <li role="tab" aria-labelledby="-3" aria-controls="-3" aria-selected="false" class=""><button
+                    aria-labelledby="-3" class="slick-dot-button"></button></li>
+                <li role="tab" aria-labelledby="-4" aria-controls="-4" aria-selected="false" class=""><button
+                    aria-labelledby="-4" class="slick-dot-button"></button></li>
+                <li role="tab" aria-labelledby="-5" aria-controls="-5" aria-selected="false" class=""><button
+                    aria-labelledby="-5" class="slick-dot-button"></button></li>
+                <li role="tab" aria-labelledby="-6" aria-controls="-6" aria-selected="false" class=""><button
+                    aria-labelledby="-6" class="slick-dot-button"></button></li>
+                <li role="tab" aria-labelledby="-7" aria-controls="-7" aria-selected="false" class=""><button
+                    aria-labelledby="-7" class="slick-dot-button"></button></li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+        <button aria-hidden="false" aria-label="Next" data-test-id="pagination-arrow-next"
+          class="pagination-arrow-selectable left-100pct">
+          <svg height="40" viewBox="0 0 40 40" fill="none"
+            aria-labelledby="cl67c6n1b0012376sulmb916o" class="rotate-180deg overflow-visibile-kbbWQF"
+            focusable="false" preserveAspectRatio="xMidYMid meet">
+            <title id="cl67c6n1b0012376sulmb916o">Arrow</title>
+            <circle cx="20" cy="20" r="20" stroke="currentColor" stroke-width="2"></circle>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="m22.292 29.706 1.416-1.412-8.295-8.316 8.252-8.272-1.416-1.412-9.661 9.684 9.704 9.728Z"
+              fill="currentColor"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- recommended for you section -->
+
+    <div>
+      <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisi nulla, accumsan ac metus eget, laoreet bibendum mi. Ut a varius purus. Phasellus dapibus egestas risus, vitae tempus urna condimentum ut. Morbi neque tortor, facilisis sit amet semper bibendum, feugiat ac elit. Aenean efficitur auctor nisi, rhoncus ornare nisi cursus sit amet. Pellentesque sed massa est. Ut nec diam condimentum, rutrum leo nec, imperdiet odio. Aenean tempor est magna, eget sagittis neque hendrerit et.</p>
+        <p>Etiam id sodales sem, in sollicitudin dolor. Sed nec massa quis arcu molestie aliquet nec a metus. Nulla sem nunc, maximus at sollicitudin quis, consequat a lorem. Cras ut mauris ut lacus eleifend malesuada. Pellentesque nec libero non diam feugiat volutpat id porttitor ante. Etiam tincidunt placerat velit. Maecenas nec pretium ante, sed egestas nibh.</p>
+        <p>Curabitur tellus velit, consequat eu lobortis ultrices, consequat congue odio. Maecenas mi justo, euismod quis ex id, condimentum pretium orci. Praesent a metus sagittis, posuere elit id, cursus nisl. Duis sodales sollicitudin lectus, vel tincidunt libero vehicula eget. Morbi fringilla hendrerit tristique. Mauris rhoncus sit amet diam ut molestie. Vivamus elementum nulla non dolor ultrices, in faucibus mauris maximus. Vestibulum vestibulum eu tellus et pellentesque. Nullam quis finibus dolor, sed pellentesque velit. Maecenas magna ex, suscipit placerat mi ut, eleifend ornare nulla. Nam pellentesque tincidunt consequat. Sed malesuada, lacus nec consequat dictum, risus magna tincidunt libero, sed lacinia arcu sem sit amet sem. Aliquam at pulvinar metus, vulputate ornare metus. Nullam pellentesque lectus lorem, a mollis arcu ullamcorper non. Donec sagittis risus lobortis lacus posuere, at ornare elit congue.</p>
+        <p>Fusce nec ligula dui. Nullam at nibh a augue viverra dignissim. Mauris id dictum velit, pulvinar tincidunt neque. Donec mauris lectus, ornare at rhoncus ut, feugiat a nisl. Morbi vehicula felis risus, at tempor elit viverra pretium. Pellentesque placerat odio purus, ut vestibulum nibh auctor id. Sed et dolor sit amet massa consequat ornare. Mauris sagittis efficitur lobortis.</p>
+        <p>Phasellus rutrum scelerisque condimentum. Curabitur sed rutrum ipsum. Mauris volutpat felis eget sem interdum, in placerat libero viverra. Ut iaculis ante nec efficitur dignissim. Nulla lobortis viverra justo, sed bibendum sem iaculis vitae. Curabitur tempus mattis enim, porttitor semper nisl consequat non. Duis lobortis congue cursus. Nam ac vulputate eros, quis vulputate magna. Duis tempus massa quis imperdiet dictum. Maecenas non pulvinar dui. Integer dolor tortor, sollicitudin id tempus et, egestas nec felis. Proin pretium sit amet mauris sed ultricies. Vivamus auctor augue metus, quis vehicula mi molestie id. Fusce eu ipsum velit. Duis dictum diam in dui sagittis aliquet. Vestibulum semper non nulla sit amet pulvinar.</p>
+      </div>
     </div>
   </div>
+
+
+
+
+  <div class="ModalPortal" id="CartModal">
+    <div class="ReactModal__Overlay flyout-overlay ReactModal__Overlay--after-open">
+      <div class="ReactModal__Content flyout-content" tabindex="-1"
+          role="dialog" aria-label="Your cart">
+          <div
+              class="cart-modal-display-wrapper cart-modal-width-wrapper">
+              <h2 class="styled-eyebrow-cart">Your cart</h2>
+              <h2 data-test-id="emptyCartDescription" class="styled-body-cart">
+                  Your cart is empty.
+              </h2>
+              <a class="styled-button-cart ds__input"
+                  href="#" onclick="return false;" data-test-id="shop-now-cta">
+                  Shop Now
+              </a>
+          </div>
+          <button aria-label="Close" class="close-cart" id="CloseCartModal"
+              style="background-color: rgba(245, 247, 249, 0.95);">
+              <svg role="img" width="20" height="20"
+                  viewBox="0 0 20 20" data-test-id="flyoutCloseIcon">
+                  <title>Close</title>
+                  <path
+                  d="M11.414 10l8.293-8.293A.999.999 0 1 0 18.293.293L10 8.586 1.707.293A.999.999 0 1 0 .293 1.707L8.586 10 .293 18.293a.999.999 0 1 0 1.414 1.414L10 11.414l8.293 8.293a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414L11.414 10z">
+                  </path>
+              </svg>
+          </button>
+      </div>
+    </div>
+  </div>
+
+
   <script src="scripts/carouselPlayPause.js"></script>
   <script src="scripts/carouselSwipe.js"></script>
+  <script src="scripts/rfy.js"></script>
+  <script src="scripts/navbar.js"></script>
+  <script src="scripts/cartModal.js"></script>
+
 </body>
 
 </html>
