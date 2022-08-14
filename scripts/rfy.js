@@ -243,10 +243,11 @@ $(window).resize(() => {
 })
 
 
+const rfyWrapper = $(".rfy-wrapper");
 // When click inside .rfy-wrapper, 
 // if mouse is not at slick-dots and mouse is outside of active slide(s),
 // go to prev/next page.
-$(".rfy-wrapper").click((event) => {
+rfyWrapper.click((event) => {
   if (ulSlickDots8.is(":visible")) {
     // When in 8-dots mode, only the current slick is active,
     const curLiBoundingClientRect = $("li[aria-label='Slide-"+curSlick+"']").get(0).getBoundingClientRect();
@@ -267,6 +268,51 @@ $(".rfy-wrapper").click((event) => {
   }
 })
 
+
+// https://stackoverflow.com/questions/4780837/is-there-an-equivalent-to-e-pagex-position-for-touchstart-event-as-there-is-fo
+// https://stackoverflow.com/questions/17957593/how-to-capture-touchend-coordinates
+
+// - Implement drag scroll for mobile view
+var lastMove = null;
+var slickTrackX = null;
+var mousedownX = null;
+
+rfyWrapper.bind('touchstart', function (e) {
+  lastMove = e;
+  mousedownX = e.touches[0].pageX;
+  console.log("touchstart:", mousedownX);
+  slickTrackX = parseFloat(slickTrack.css("transform").split(/\w+\(|\);?/)[1].split(/,\s?/g)[4]);
+  console.log(slickTrackX);
+});
+
+rfyWrapper.bind('touchmove', function (e) {
+  const curPageX = e.touches[0].pageX;
+  const diff = curPageX - mousedownX;
+  const newSlickTrackX = diff + slickTrackX;
+  slickTrack.css({"transform": "translate3d(" + (newSlickTrackX) + "px, 0px, 0px)"});
+  //console.log("touchmove:", e.touches[0].pageX);
+  lastMove = e;
+});
+
+rfyWrapper.bind('touchend', function (e) {
+  const curPageX = lastMove.touches[0].pageX;
+  const diff = curPageX - mousedownX;
+  if (diff < (-90) && curSlick < slickLength) {
+    // should go to next slide
+    console.log("should go to next slide");
+    goToSlickSlidePage(curSlick + 1);
+  } else if (diff > 90 && curSlick > 1) {
+    // should go to prev slide
+    console.log("should go to prev slide");
+    goToSlickSlidePage(curSlick - 1);
+  } else {
+    // should return to current slide
+    console.log("should return to current slide");
+    goToSlickSlidePage(curSlick);
+  }
+
+});
+
 // https://stackoverflow.com/questions/1818474/how-to-trigger-the-window-resize-event-in-javascript
 // Try to manually trigger the window resize event in JavaScript
 // in order to dynamically change 2-length mode or 8-length mode at start of website.
@@ -275,22 +321,22 @@ window.dispatchEvent(new Event('resize'));
 /*
 add to cart
 <button
-                          type="button" class="quick-add-button ds__input"
-                          aria-label="Quick Add Peloton Bike+" data-test-id="top-level-quick-add"
-                          disabled>
-                          <div class="loading-svg-wrapper">
-                            <svg width="20px" height="20px" viewBox="0 0 40 40">
-                              <path opacity="0.4" fill="currentColor" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
-                              s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
-                              c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z">
-                            </path>
-                              <path fill="currentColor" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
-                              C22.32,8.481,24.301,9.057,26.013,10.047z">
-                                <animateTransform attributeType="xml" attributeName="transform" type="rotate"
-                                  from="0 20 20" to="360 20 20" dur="1.0s" repeatCount="indefinite">
-                                </animateTransform>
-                              </path>
-                            </svg>
-                          </div>
-                        </button>
-                        */
+  type="button" class="quick-add-button ds__input"
+  aria-label="Quick Add Peloton Bike+" data-test-id="top-level-quick-add"
+  disabled>
+  <div class="loading-svg-wrapper">
+    <svg width="20px" height="20px" viewBox="0 0 40 40">
+      <path opacity="0.4" fill="currentColor" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
+      s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
+      c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z">
+    </path>
+      <path fill="currentColor" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
+      C22.32,8.481,24.301,9.057,26.013,10.047z">
+        <animateTransform attributeType="xml" attributeName="transform" type="rotate"
+          from="0 20 20" to="360 20 20" dur="1.0s" repeatCount="indefinite">
+        </animateTransform>
+      </path>
+    </svg>
+  </div>
+</button>
+*/
