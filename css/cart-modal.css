@@ -1,0 +1,169 @@
+.ReactModal__Body--open {
+    overflow-y: hidden;
+}
+
+.flyout-overlay::before {
+    content: "";
+    position: fixed;
+    z-index: 90005;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.ReactModal__Overlay--after-open::before {
+    animation: 500ms ease 0s 1 normal forwards running flyout-fadein;
+}
+
+
+
+.flyout-content {
+    position: fixed;
+    background: rgb(245, 247, 249);
+    overflow: auto;
+    outline: none;
+    top: 0px;
+    bottom: 0px;
+    border: none;
+    transition: all 300ms ease-out 0s;
+    z-index: 90005;
+}
+
+@media (min-width: 580px) {
+    .flyout-content {
+        transition: all 400ms ease 0s;
+    }
+}
+
+.flyout-content {
+    right: 0px;
+    transform: translate3d(100%, 0px, 0px);
+}
+
+.ReactModal__Content--after-open {
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* div tag: cart-modal-display-wrapper */
+.cart-modal-display-wrapper {
+    display: block;
+    position: relative;
+    background-color: rgb(245, 247, 249);
+    width: 100%;
+    padding: 2rem;
+}
+
+/* div tag: cart-modal-width-wrapper */
+.cart-modal-width-wrapper {
+    width: 100vw;
+    max-width: 456px;
+    overflow-x: hidden;
+}
+
+/* button tag: close-cart */
+.close-cart {
+    border-radius: 100%;
+    cursor: pointer;
+    fill: rgb(101, 102, 106);
+    padding: 12.5px;
+    position: absolute;
+    right: 20px;
+    top: 7.5px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+@media (-moz-touch-enabled:0), (pointer: fine), (-ms-high-contrast:none), (-ms-high-contrast:active) {
+    .close-cart:hover {
+        fill: rgb(24, 26, 29);
+    }
+}
+
+.close-cart svg {
+    width: 15px;
+    height: 15px;
+    display: block;
+}
+
+/* h2 tag: styled-eyebrow-cart */
+.styled-eyebrow-cart {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 1.5px;
+    font-family: brandon-grotesque, sans-serif !important;
+}
+
+@media (min-width: 768px) {
+    .styled-eyebrow-cart {
+        font-size: 16px;
+        letter-spacing: 1.8px;
+    }
+}
+
+/* h2 tag: styled-body-cart */
+.styled-body-cart {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 4rem;
+    color: rgb(101, 102, 106);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
+}
+
+@media (min-width: 768px) {
+    .styled-body-cart {
+        font-size: 18px;
+        line-height: 1.55;
+        letter-spacing: 0.4px;
+    }
+}
+
+/* a tag: styled-button-cart */
+.styled-button-cart {
+    line-height: normal;
+    -webkit-font-smoothing: auto;
+    appearance: auto;
+    background: none rgb(223, 28, 47);
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.15s ease-in-out 0s;
+    user-select: none;
+    vertical-align: middle;
+    border-color: rgb(223, 28, 47);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    height: 56px;
+    width: 100%;
+    padding: 0px calc(1.5rem - 2px);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    box-shadow: transparent 0px 0px 0px 0px;
+    font-family: brandon-grotesque, sans-serif !important;
+}
+
+.styled-button-cart:hover:not(:disabled) {
+    background-color: rgb(208, 12, 42);
+    border-color: rgb(208, 12, 42);
+}

@@ -1,0 +1,112 @@
+
+/* (dYhvXn) styled-link-contains-span */
+.styled-link-contains-span {
+    color: rgb(24, 26, 29);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: color 0.15s ease-in-out 0s;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+@media (min-width: 768px) {
+    .styled-link-contains-span {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .styled-link-contains-span {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .styled-link-contains-span {
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .styled-link-contains-span {
+        line-height: 20px;
+    }
+}
+
+.styled-link-contains-span::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: currentcolor;
+    margin-top: 2px;
+}
+
+@media (min-width: 768px) {
+    .styled-link-contains-span::after {
+        margin-top: 2px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .styled-link-contains-span::after {
+        margin-top: 2px;
+    }
+}
+
+.styled-link-contains-span span {
+    font-size: 13px;
+    line-height: 16px;
+}
+
+@media (min-width: 768px) {
+    .styled-link-contains-span span {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .styled-link-contains-span span {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    .styled-link-contains-span span {
+        line-height: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .styled-link-contains-span span {
+        line-height: 20px;
+    }
+}
+
+
+
+/*(fCjOYM) span tag. styled-display */
+.styled-display {
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    font-size: 22px;
+    line-height: 1.45;
+    letter-spacing: 2.2px;
+}
+
+@media (min-width: 768px) {
+    .styled-display {
+        font-size: 28px;
+        line-height: 1.25;
+        letter-spacing: 2.8px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .styled-display {
+        font-size: 32px;
+        letter-spacing: 3.2px;
+    }
+}

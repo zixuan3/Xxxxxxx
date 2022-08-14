@@ -1,0 +1,726 @@
+/* padding-top-bottom */
+.padding-top-bottom {
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
+}
+
+@media (min-width: 768px) {
+    .padding-top-bottom {
+        padding-top: 5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+/* styled-headline-h2 */
+.styled-headline-h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    display: block;
+    color: rgb(101, 102, 106);
+    font-size: 22px;
+    line-height: 1.45;
+}
+
+@media (min-width: 768px) {
+    .styled-headline-h2 {
+        font-size: 28px;
+    }
+}
+
+/* styled-label-h3 */
+.styled-label-h3 {
+    font-family: Roboto, sans-serif;
+    display: block;
+    color: rgb(24, 26, 29);
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.4px;
+    line-height: 1.71;
+}
+
+/* text-align-center */
+.text-align-center {
+    text-align: center;
+}
+
+/* rfy-wrapper */
+.rfy-wrapper {
+    position: relative;
+    margin: 1rem auto 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .rfy-wrapper {
+        max-width: calc((1224px + 1.5rem + 1.5rem) - 1px);
+    }
+}
+
+/* button tag: pagination-arrow-disabled */
+.pagination-arrow-disabled {
+    -webkit-box-align: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    cursor: not-allowed;
+    color: rgb(168, 172, 177);
+    display: flex;
+    height: 40px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+    z-index: 2;
+    transition-property: fill, background, color;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+.pagination-arrow-disabled circle {
+    stroke-width: 1;
+}
+
+/* button tag: pagination-arrow-selectable */
+.pagination-arrow-selectable {
+    -webkit-box-align: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(24, 26, 29);
+    display: flex;
+    height: 40px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 20px);
+    width: 40px;
+    z-index: 2;
+    transition-property: fill, background, color;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+.pagination-arrow-selectable:hover {
+    background: rgb(24, 26, 29);
+}
+
+.pagination-arrow-selectable:hover path {
+    fill: rgb(255, 255, 255);
+}
+
+.pagination-arrow-selectable circle {
+    stroke-width: 1;
+}
+
+/* button tag: right-100pct */
+.right-100pct {
+    right: 100%;
+}
+
+/* button tag: left-100pct */
+.left-100pct {
+    left: 100%;
+}
+
+/* div tag: rfy-content-wrapper */
+.rfy-content-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-left: 11px;
+    height: 495px;
+}
+
+.rfy-content-wrapper .slick-bottom {
+    margin: 0px auto 0px -11px;
+}
+
+.rfy-content-wrapper .slick-dots {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+
+/* svg tag: rotate-180deg */
+.rotate-180deg {
+    transform: rotate(180deg);
+}
+
+/* div tag: slick-slider */
+.slick-slider {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list, .slick-slider {
+    position: relative;
+    display: block;
+}
+
+/* div tag: slick-list */
+.slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.slick-slider .slick-list, .slick-slider .slick-track {
+    transform: translateZ(0);
+}
+
+.rfy-content-wrapper .slick-list {
+    overflow: visible;
+}
+
+/* div tag: width-100pct */
+.width-100pct {
+    width: 100%;
+}
+
+
+/* ul tag: slick-track */
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:after, .slick-track:before {
+    display: table;
+    content: "";
+}
+
+.slick-track:after {
+    clear: both;/* https://developer.mozilla.org/en-US/docs/Web/CSS/clear */
+}
+
+/* li tag: slick-slide */
+.slick-slide {
+    display: none;
+    float: left;
+    /*height: 100%;*/
+    height: 479px;
+    min-height: 1px;
+}
+
+.slick-slide img {
+    display: block;
+}
+
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+
+
+
+
+
+/* div tag: rfy-slide-padding-wrapper */
+.rfy-slide-padding-wrapper {
+    padding: 2rem 0.75rem;
+}
+
+/* div tag: product-tile */
+.product-tile {
+    background-color: rgb(245, 247, 249);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    height: 415px;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0px 1.5rem;
+    position: relative;
+    transition-duration: 200ms;
+    transition-property: box-shadow;
+    width: 288px;
+    box-shadow: none;
+}
+
+.product-tile:hover {
+    box-shadow: rgb(0 0 0 / 24%) 0px 5px 24px 0px;
+}
+
+/* a tag: product-tile-display */
+.product-tile-display {
+    display: block;
+    line-height: 0;
+}
+
+.product-tile-display::after {
+    display: none;
+}
+
+.product-tile-display span {
+    text-transform: none;
+}
+
+/* a tag: product-tile-display-text */
+.product-tile-display-text {
+    display: block;
+}
+
+.product-tile-display-text::after {
+    display: none;
+}
+
+.product-tile-display-text span {
+    text-transform: none;
+}
+
+/* div tag: media-container */
+.media-container {
+    display: inline-block;
+    height: 240px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.media-container > div, .media-container video, .media-container img, .media-container picture {
+    height: 100%;
+    width: 100%;
+    object-fit: inherit;
+    vertical-align: middle;
+}
+
+/* div tag: rfy-medal-wrapper */
+.rfy-medal-wrapper {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 20px;
+    margin-bottom: 1.5rem;
+}
+
+/* span tag: styled-support-font */
+.styled-support-font {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    color: rgb(101, 102, 106);
+    font-size: 12px;
+    line-height: 1.66;
+}
+
+/* div tag: media-container-tinyimg */
+.media-container-tinyimg {
+    display: inline-block;
+    height: 16px;
+    width: max-content;
+    object-fit: contain;
+}
+
+.media-container-tinyimg > div,
+.media-container-tinyimg video,
+.media-container-tinyimg img,
+.media-container-tinyimg picture {
+    height: 100%;
+    width: 100%;
+    object-fit: inherit;
+    vertical-align: middle;
+}
+
+/* div tag: rfy-tinyimg-wrapper */
+.rfy-tinyimg-wrapper {
+    margin-right: 0.25rem;
+    vertical-align: text-bottom;
+}
+
+/* span tag: styled-support-price */
+.styled-support-price {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgb(24, 26, 29);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* margin-left-8px */
+.margin-left-8px {
+    margin-left: 8px;
+}
+
+/* 
+difference between display: inline-flex and display: flex
+https://stackoverflow.com/questions/27418104/whats-the-difference-between-displayinline-flex-and-displayflex 
+*/
+
+/* button tag: quick-add-button */
+.quick-add-button {
+    line-height: normal;
+    -webkit-font-smoothing: auto;
+    appearance: auto;
+    background: none transparent;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.15s ease-in-out 0s;
+    user-select: none;
+    vertical-align: middle;
+    border-color: rgb(24, 26, 29);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    height: 40px;
+    width: 100%;
+    padding: 0px calc(1.5rem - 2px);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgb(24, 26, 29);
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    box-shadow: transparent 0px 0px 0px 0px;
+    font-family: brandon-grotesque, sans-serif !important;
+}
+
+.quick-add-button:hover:not(:disabled) {
+    background-color: rgb(24, 26, 29);
+    border-color: rgb(24, 26, 29);
+    color: rgb(255, 255, 255);
+}
+
+.quick-add-button:disabled, 
+.quick-add-button.isDisabled {
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.quick-add-button:not(.isLoading):disabled, 
+.quick-add-button:not(.isLoading).isDisabled {
+    background-color: transparent;
+    border-color: rgb(101, 102, 106);
+    color: rgb(101, 102, 106);
+}
+
+.quick-add-button > :not(svg) {
+    -webkit-box-align: center;
+    align-items: center;
+    inset: 0px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.quick-add-button svg {
+    transition: all 0.15s ease-in-out 0s;
+    fill: rgb(24, 26, 29);
+}
+
+/* div tag: loading-svg-wrapper */
+.loading-svg-wrapper {
+    margin: -3px 0px;
+}
+
+/* div tag: config-product-popup */
+.config-product-popup {
+    --anim-duration: 400ms;
+    position: absolute;
+    inset: 0px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    transition-property: visibility, background-color;
+    transition-duration: var(--anim-duration);
+    border-radius: 4px;
+    overflow: visible;
+}
+
+.config-product-popup[aria-expanded="true"] {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* button tag: slick-dot-button */
+.slick-dot-button {
+    background-color: rgb(168, 172, 177);
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 0px 4px;
+    width: 8px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+}
+
+.slick-active .slick-dot-button {
+    background-color: rgb(105, 113, 128);
+}
+
+@media not all, (pointer: fine), not all, not all {
+    .slick-dot-button:hover {
+        background-color: rgb(105, 113, 128);
+    }
+}
+
+/* div tag: config-product-popup-changing */
+
+.config-product-popup-changing {
+    --anim-duration: 400ms;
+    position: absolute;
+    inset: 0px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    transition-property: visibility, background-color;
+    transition-duration: var(--anim-duration);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* button tag: flex-1-1-0-bg-none*/
+.flex-1-1-0-bg-none {
+    flex: 1 1 0%;
+    background: none;
+}
+
+/* div tag: slide-out-container*/
+.slide-out-container {
+    z-index: 2;
+    transform: translateY(100%);
+    opacity: 0;
+    transition-property: transform, opacity;
+    transition-duration: var(--anim-duration);
+}
+
+.config-product-popup[aria-expanded="true"] .slide-out-container {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* div tag: margin-top-gradient. creates a shin line of grey linear gradient at top of popup box */
+.margin-top-gradient {
+    height: 1.5rem;
+    margin-top: -1.5rem;
+    pointer-events: none;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.27) 100%);
+}
+
+/* div tag: pop-content-wrapper */
+.pop-content-wrapper {
+    position: relative;
+    background: white;
+    padding: 1rem 1rem 1.5rem;
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* button tag: configure-popup-close */
+.configure-popup-close {
+    padding: 1.5rem;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+/* span tag: configure-product-price */
+.configure-product-price {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    color: rgb(24, 26, 29);
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* div tag: margin-bottom-1rem */
+.margin-bottom-1rem {
+    margin-bottom: 1rem;
+}
+
+/* div tag: cursor-pointer-position-relative */
+.cursor-pointer-position-relative {
+    cursor: pointer;
+    position: relative;
+}
+
+/* label tag: product-label */
+.product-label {
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+    font-size: 14px;
+    font-weight: 400;
+    transform: translateX(12px) translateY(50%) translateY(3px);
+    color: rgb(101, 102, 106);
+    position: absolute;
+    transition: all 150ms ease 0s;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* label tag: product-label 
+    use javascript to set <label> product-label class to this when chosen product size
+*/
+.product-label-chosen {
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+    font-size: 12px;
+    font-weight: 400;
+    transform: translate(12px, 5px);
+    color: rgb(101, 102, 106);
+    position: absolute;
+    transition: all 150ms ease 0s;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* select tag: configure-product-size */
+.configure-product-size {
+    box-shadow: none;
+    outline: 0px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.025em;
+    line-height: 1.5em;
+    font-size: 14px;
+    font-weight: 400;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(228, 230, 231);
+    border-radius: 2px;
+    height: 46px;
+    padding: 16px 12px 0px;
+    width: 100%;
+    appearance: none;
+    color: transparent;
+    text-shadow: rgb(24 26 29) 0px 0px 0px;
+}
+
+.configure-product-size[data-value=""] {
+    color: transparent;
+    text-shadow: rgb(101 102 106) 0px 0px 0px;
+}
+
+.configure-product-size:active, 
+.configure-product-size:focus {
+    border-color: rgb(24, 26, 29);
+}
+
+.configure-product-size:active[data-user-focused="true"] + div, 
+.configure-product-size:focus[data-user-focused="true"] + div {
+    border-color: rgb(24, 26, 29);
+}
+
+.configure-product-size[data-has-error="true"], 
+.configure-product-size:invalid:not(:disabled)[data-user-focused="true"] {
+    border-color: rgb(223, 28, 47);
+}
+
+.configure-product-size[data-has-error="true"][data-user-focused="true"] + div, 
+.configure-product-size:invalid:not(:disabled)[data-user-focused="true"] + div {
+    border-color: rgb(223, 28, 47);
+}
+
+.configure-product-size:active:required:not(:disabled), 
+.configure-product-size:focus:required:not(:disabled) {
+    border-color: rgb(24, 26, 29);
+}
+
+.configure-product-size:active:required:not(:disabled)[data-user-focused="true"] + div, 
+.configure-product-size:focus:required:not(:disabled)[data-user-focused="true"] + div {
+    border-color: rgb(24, 26, 29);
+}
+
+.configure-product-size option {
+    color: rgb(101, 102, 106);
+}
+
+/* div tag: select-icon */
+.select-icon {
+    -webkit-box-align: center;
+    align-items: center;
+    bottom: 0px;
+    display: flex;
+    height: 46px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    pointer-events: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 42px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(228, 230, 231);
+}
+
+.select-icon svg {
+    fill: rgb(101, 102, 106);
+}
+
+/* button tag: popup-quick-add-button */
+.popup-quick-add-button {
+    line-height: normal;
+    -webkit-font-smoothing: auto;
+    appearance: auto;
+    background: none rgb(24, 26, 29);
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.15s ease-in-out 0s;
+    user-select: none;
+    vertical-align: middle;
+    border-color: rgb(24, 26, 29);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    height: 40px;
+    width: 100%;
+    padding: 0px calc(1.5rem - 2px);
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    box-shadow: transparent 0px 0px 0px 0px;
+    font-family: brandon-grotesque, sans-serif !important;
+}
+
+.popup-quick-add-button:hover:not(:disabled) {
+    background-color: rgb(101, 102, 106);
+    border-color: rgb(101, 102, 106);
+}

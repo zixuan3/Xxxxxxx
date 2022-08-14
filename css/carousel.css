@@ -67,61 +67,7 @@
     height: 100%;
 }
 
-/*hTVjSJ(hTVjSJ) div tag. banner-hTVjSJ*/
-.banner-hTVjSJ {
-    font-weight: 700;
-    font-family: brandon-grotesque, sans-serif;
-    letter-spacing: 0.1em;
-    line-height: 1.375em;
-    text-transform: uppercase;
-    font-size: 12px;
-    -webkit-box-align: center;
-    align-items: center;
-    background: rgb(245, 247, 249);
-    color: rgb(24, 26, 29);
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    padding: 15px 30px;
-    text-align: center;
-    width: 100%;
-}
 
-@media (min-width: 580px) {
-    .banner-hTVjSJ {
-        font-weight: 700;
-        font-family: brandon-grotesque, sans-serif;
-        letter-spacing: 0.1em;
-        line-height: 1.375em;
-        text-transform: uppercase;
-        font-size: 14px;
-        padding: 20px 40px;
-    }
-}
-
-@media (min-width: 800px) {
-    .banner-hTVjSJ {
-        min-height: 66px;
-    }
-}
-
-/*lnVZPD(lnVZPD) span tag. homepage-banner-text-lnVZPD */
-
-/*gCYLON(gCYLON) span tag. homepage-banner-cta-gCYLON*/
-.homepage-banner-cta-gCYLON {
-    position: relative;
-    margin-left: 0px;
-    white-space: nowrap;
-}
-
-.homepage-banner-cta-gCYLON::after {
-    border-bottom: 1px solid rgb(24, 26, 29);
-    content: "";
-    left: 0px;
-    position: absolute;
-    top: calc(50% + 9px);
-    width: 100%;
-}
 
 /*gUIdhS(EjCrS) div tag. cmsHeroContainer-gUIdhS */
 
