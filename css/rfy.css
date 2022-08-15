@@ -1,3 +1,7 @@
+:focus {
+    outline: 0 !important;
+}
+
 /* padding-top-bottom */
 .padding-top-bottom {
     padding-bottom: 3.5rem;
